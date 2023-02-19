@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <script src="index.js"></script>
+
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <!-- Courier prime font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+
+        <!-- Poppins font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <title>About</title>
+    </head>
+    <body>
+        <!-- Navigation Bar by Adam from JavaScript Academy https://www.youtube.com/watch?v=OjQP7rPwJyE -->
+        <header>
+            <div class="name"><a href="index.html">Shashwat</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">&#60;<b>home</b>&#62;</a></li>
+                    <li><a href="projects.html">&#60;<b>projects</b>&#62;</a></li>
+                    <li><a class="current" href="about.html">&#60;<b>about</b>&#62;</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">&#60;<b>home</b>&#62;</a></li>
+                    <li><a href="projects.html">&#60;<b>projects</b>&#62;</a></li>
+                    <li><a href="about.html">&#60;<b>about</b>&#62;</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="main">
+            <h1><b>about</b></h1>
+            <div class="line"></div>
+            <p>
+                My name is <a href="mailto: shashwat.bhandari.14@gmail.com">Shashwat Bhandari</a>, and I am currently a <a href="countdown.html">high school</a> student at OFS
+                (<a href="https://www.ofs.edu.sg" target="_blank">Overseas Family School</a>) in Singapore, studying the
+                <a href="https://www.ibo.org" target="_blank">IB Diploma Programme</a>. The following are my chosen subjects:
+                <ul>
+                    <li>HL Computer Science (Higher Level)</li>
+                    <li>HL Maths Analysis & Approaches (Higher Level)</li>
+                    <li>HL Physics (Higher Level)</li>
+                    <li>SL Digital Society (Standard Level)</li>
+                    <li>SL English Language & Literature (Standard Level)</li>
+                    <li>SL French B (Standard Level)</li>
+                </ul>
+            </p>
+            <br>
+            <h3><b>My Hobbies</b></h3>
+            <br>
+            <p class="buttons">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#physicalActivities" aria-expanded="false" aria-controls="physicalActivities">Sports</button>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#drums" aria-expanded="false" aria-controls="drums">Drums</button>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#programming" aria-expanded="false" aria-controls="programming">Programming</button>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="physicalActivities">
+                        <div class="card card-body">
+                            <p>
+                                I am not a fitness freak, however, I do maintain my physical health by
+                                participating in various clubs and other activities within my school.
+                            </p>
+                            <p>
+                                I was part of the high-school cross-country team for season 1.
+                                I am part of the track team for season 2 and intend to be part of the cross country or track team throughout high school.
+                            </p>
+                            <p>
+                                Furthermore, I play in the table tennis club at school and am arguably one of the best in our club.
+                            </p>
+                            <p>
+                                Apart from these sports, I have some experience playing basketball and winning a few tournaments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="drums">
+                        <div class="card card-body">
+                            <p>
+                                I have been playing drums since 2015, and also thoroughly enjoy doing so.
+                                I have learned to play various songs of different genres over the years and have become quite good at sight-reading.
+                            </p>
+                            <p>
+                                I have recorded my video for grade 6 due to corona, and am expecting to pass and hoping for a distinction :-)
+                            </p>
+                            <p>
+                                The genre that I usually enjoy playing is rock & pop.
+                                However, I have also tried other genres, including mambo, funk, pop-reggae, and much more!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="programming">
+                        <div class="card card-body">
+                            <p>
+                                I've always been interested in coding since I was little. All those movies with hackers were quite fascinating for me.
+                            </p>
+                            <p>
+                                I started my journey in programming in 2021 when I bought a course for Python on Udemy.
+                                And since then, I've begun to expand my skill set by exploring other languages and new concepts until I stumbled upon CS50.
+                            </p>
+                            <p>
+                                I found CS50 to be a remarkable course, even though at times I found it quite challenging to comprehend and solve the problems.
+                                However, in the end, I persevered and am at the second last week!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Academics</h3>
+            <p>
+                I have always been serious about academics and am a straight-A student (literally, as I got 7 A*s for all my IGCSE subjects in total).
+                However, I've realized that IB is quite challenging and requires a lot of determination and hard work to get good scores.
+            </p>
+            <p>
+                I tried to balance out my academics with my extracurriculars, even though this initially took a small toll on my grades :( <br>
+                Nevertheless, I've now managed to get a hang of this new <i>lifestyle</i> and I know that in the end, I will do the best I can and be satisfied with the final results.
+            </p>
+        </div>
+    </body>
+</html>

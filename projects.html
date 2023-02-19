@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <script src="index.js"></script>
+
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <!-- Courier prime font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+
+        <!-- Poppins font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+        <title>Projects</title>
+    </head>
+    <body>
+        <!-- Navigation Bar by Adam from JavaScript Academy https://www.youtube.com/watch?v=OjQP7rPwJyE -->
+        <header>
+            <div class="name"><a href="index.html">Shashwat</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">&#60;<b>home</b>&#62;</a></li>
+                    <li><a class="current" href="projects.html">&#60;<b>projects</b>&#62;</a></li>
+                    <li><a href="about.html">&#60;<b>about</b>&#62;</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">&#60;<b>home</b>&#62;</a></li>
+                    <li><a href="projects.html">&#60;<b>projects</b>&#62;</a></li>
+                    <li><a href="about.html">&#60;<b>about</b>&#62;</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="main">
+            <h1><b>projects</b></h1>
+            <div class="line"></div>
+            <p>
+                I haven't done a ton of projects because I'm still relatively new to programming,
+                however, I did try and create some simple programs and applications using Python as well as a website as outlined below:
+                <ul>
+                    <li><a href="#virtual-assistant">Virtual Assistant</a></li>
+                    <li><a href="#crazy-numbers">Crazy Numbers</a></li>
+                    <li><a href="#block-world">Block World</a></li>
+                    <li><a href="#website">Personal website for a fictitious client</a></li>
+                </ul>
+            </p>
+            <br>
+
+            <h3 id="virtual-assistant">Virtual Assistant</h3>
+            <p>
+                This was the first major project that I did for my
+                <a href="https://www.ibo.org/programmes/middle-years-programme/" target="_blank">MYP Personal Project</a>.
+                It enabled me to learn much more about Python and think independently.
+                I did not use Natural Language Processing (NLP) as that was too complicated for me at the time, however,
+                I believe that I can take this project forward and implement a more realistic version of a virtual assistant
+                that incorporates NLP and maybe even a simple image recognition feature.
+                The features that are currently integrated within this version include:
+                <ul>
+                    <li>Speech recognition using the
+                        <a href="https://pypi.org/project/SpeechRecognition/" target="_blank">SpeechRecognition</a>
+                         library (Speech-to-Text)</li>
+                    <li>Text-to-Speech using the <a href="https://pypi.org/project/pyttsx3/" target="_blank">pyttsx3</a>
+                         library</li>
+                    <li>Jokes, puns, and facts that are randomly selected from a specified list
+                        (could use an API now that I have learned about it)</li>
+                    <li>Wishing the user based on the time and also telling the time using the
+                        <a href="https://docs.python.org/3/library/datetime.html" target="_blank">datetime</a> module</li>
+                    <li>Simple answers to basic questions (origin, creator, etc.)</li>
+                    <li>Wikipedia searches using the
+                        <a href="https://pypi.org/project/wikipedia/" target="_blank">wikipedia</a> library</li>
+                    <li>Opening the news
+                        (<a href="https://www.straitstimes.com" target="_blank">The Straits Times</a>) and searching the
+                        Internet using the <a href="https://docs.python.org/3/library/webbrowser.html" target="_blank">webbrowser</a>
+                        module</li>
+                    <li>Self-made simple games including:
+                        <ul>
+                            <li>Magic 8-ball</li>
+                            <li>Unpredictable Numbers</li>
+                            <li>Lucky 7</li>
+                        </ul>
+                    </li>
+                    <li>Opening applications (YouTube, Chrome, Atom, Discord) using the
+                        <a href="https://docs.python.org/3/library/webbrowser.html" target="_blank">webbrowser</a>
+                         module and the
+                         <a href="https://docs.python.org/3/library/os.html" target="_blank">os</a> module</li>
+                    <li>Shutting down and logging off the computer using the
+                        <a href="https://docs.python.org/3/library/subprocess.html" target="_blank">subprocess</a> module</li>
+                    <li>Cheesy easter eggs inspired by Google Assistant!</li>
+                </ul>
+                I was able to expand my knowledge immensely through this project and also wrote my first decent program
+                without following any tutorials - Magic 8-ball. From thereon, there was no stopping me, and I went on to
+                program all the games of the virtual assistant without any tutorials. However, for most of the other features,
+                I had to research and follow tutorials (like
+                <a href="https://towardsdatascience.com/how-to-build-your-own-ai-personal-assistant-using-python-f57247b4494b" target="_blank">this</a>)
+                to first understand the basic concepts. One thing that I tried to focus
+                on was accessibility. I tried to make my program as accessible as possible by making sure that the program
+                both spoke and printed out text whenever there was an output. Similarly, I added manual user input through
+                the keyboard for certain parts of the program instead of voice recognition. I was quite pleased with the outcome
+                and will never forget this journey.
+            </p>
+            <br>
+
+            <h3 id="crazy-numbers">Crazy numbers</h3>
+            <p>
+                I created this game whilst I was creating the virtual assistant.
+                I intended to create something entertaining but also educative and helpful in some sense.
+                The first thing that came to my mind was making a game with the genre of mathematical thinking.
+                The gist of the game is that there are 5 possible options:
+                <ul>
+                    <li>Addition</li>
+                    <li>Subtraction</li>
+                    <li>Multiplication</li>
+                    <li>Division</li>
+                    <li>Indices</li>
+                </ul>
+            </p>
+            <p>
+                Each of these options has 7 varying levels of difficulty, with the number of points received
+                increasing with each level. Some features of this game include:
+                <ul>
+                    <li>Random number generation using the
+                        <a href="https://docs.python.org/3/library/random.html" target="_blank">random</a> module</li>
+                    <li>Saving the high score in a <code>.txt</code> file</li>
+                    <li>Calculating the time taken for each question to be answered using the
+                        <a href="https://docs.python.org/3/library/time.html" target="_blank">time</a> module</li>
+                    <li>Use of certain visual and textual effects to make the game more engaging</li>
+                    <li><u>BONUS</u>: added average time is taken per question and the total number of questions attempted
+                        after gaining more experience in programming</li>
+                </ul>
+                My takeaway from this project was the power of abstraction using functions.
+                Initially, as I started developing the game, I realized that a lot of the statements were being repeated
+                 - it felt like I was writing spaghetti code. However, I soon came to realize this and implemented functions
+                 within my program. It still isn't perfect but it <em>is</em> much better.
+            </p>
+            <br>
+
+            <h3 id="block-world">Block World</h3>
+            <p>
+                I undertook this project because I just wanted to build something fun.
+                (or perhaps something that would interest my friends and make me look cool 😎)
+                So, I started following incredible
+                <a href="https://www.youtube.com/watch?v=vX4l-qozib8&list=PLmP1LNMzp97pQe1FiGpdOLKeWYfTMZM7n" target="_blank">tutorials</a>
+                 by the <a href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg" target="_blank">RedHenDev</a>.
+                 However, I was just coding along with him,
+                and not understanding the tiny specific details of every line of code. I did get the gist of the ideas that he implemented,
+                however, I was slightly disheartened as I wasn't able to completely understand everything. Nevertheless,
+                it was quite fun and satisfying to see the program work. Some particular features of this Minecraft ripoff included:
+                <ul>
+                    <li>Perlin noise for terrain generation using the
+                        <a href="https://pypi.org/project/perlin-noise/" target="_blank">perlin-noise</a> library</li>
+                    <li>Improved gravity system to make the game efficient</li>
+                    <li>Effective terrain generation with a unique swirling technique (infinite)</li>
+                    <li>The capability of building with different materials and mining only built materials</li>
+                    <li>Self-made mods</li>
+                </ul>
+            </p>
+            <p>
+                Some images of the final product are shown below:
+                <br>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/block_world_v1_1.png"></div>
+                        <div class="swiper-slide"><img src="images/block_world_v1_2.png"></div>
+                        <div class="swiper-slide"><img src="images/block_world_v1_3.png"></div>
+                    </div>
+                    <div class="swiper-button-next nav-btn"></div>
+                    <div class="swiper-button-prev nav-btn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+                </script>
+            </p>
+            <p>
+                The following images show the unfinished product but with more features - the textures change as the altitude changes:
+                <br>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/block_world_v1_4.png"></div>
+                        <div class="swiper-slide"><img src="images/block_world_v1_5.png"></div>
+                        <div class="swiper-slide"><img src="images/block_world_v1_6.png"></div>
+                    </div>
+                    <div class="swiper-button-next nav-btn"></div>
+                    <div class="swiper-button-prev nav-btn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+                </script>
+            </p>
+            <p>
+                However, I recently decided to start again and work on a second version, again following the
+                <a href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg" target="_blank">RedHenDev</a> with his new
+                <a href="https://www.youtube.com/watch?v=fofR4yzTCdA&list=PLmP1LNMzp97rIbwnGHhjjobHHqWekxy8Y" target="_blank">tutorials series</a>.
+                With the previous version abandoned, I decided on focusing on adding features that I wasn't able to in the previous version.
+                So far, many of them are similar, but a few unique ones include:
+                <ul>
+                    <li>Mining into the terrain (infinitely)</li>
+                    <li>Similar terrain generation techniques however with some minor improvements to enhance gameplay</li>
+                    <li>Step sounds that change as the terrain changes (from normal terrain to snow in higher terrains)</li>
+                    <li>Falling snowflakes that follow the player around</li>
+                </ul>
+            </p>
+            <p>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/block_world_v2_1.png"></div>
+                        <div class="swiper-slide"><img src="images/block_world_v2_2.png"></div>
+                        <div class="swiper-slide"><img src="images/block_world_v2_3.png"></div>
+                    </div>
+                    <div class="swiper-button-next nav-btn"></div>
+                    <div class="swiper-button-prev nav-btn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+                </script>
+            </p>
+            <p>
+                An important feature of the second version and my key takeaway was the use of multiple modules
+                that all ultimately mingled and worked together to make the game work! It opened my mind up to this way of programming.
+                I quickly realized the benefits of stepwise refinement and maintaining organized files.
+            </p>
+            <br>
+
+            <h3 id="website">Personal website for a fictitious client</h3>
+            <p>
+                I had to make this website (<a href="https://www.ofs.edu.sg/user/s_bhandari/index.html" target="_blank">click here</a>)
+                as part of my school assignment in ICT. I devoted a lot of time and effort to making it as appealing as possible for the end user.
+                I took many features into careful consideration as well. However, I did not implement a responsive design (unlike this website)
+                as I had a lack of knowledge in the field. The website icorporates 6 total pages, 2 of which haven't been completed and
+                instead have a countdown. Some features of this website include the following:
+                <ul>
+                    <li>Light/dark mode</li>
+                    <li>Header and animated footer</li>
+                    <li>Internal and external links</li>
+                    <li>An embedded video</li>
+                    <li>A login page (currently does not support signing up)</li>
+                </ul>
+            </p>
+            <p>
+                I uploaded the website to the school server, however for some reason the login page doesn't work and some characters
+                don't appear the way they're supposed, despite working perfectly fine when I run the website locally. I've come quite
+                far since then and have learned a lot of aspects of web development.
+            </p>
+            <br>
+        </div>
+    </body>
+</html>

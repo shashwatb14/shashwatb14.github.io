@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <script src="index.js"></script>
+
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <!-- Courier prime font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+
+        <!-- Poppins font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <title>Countdown</title>
+    </head>
+    <body>
+        <div class="countdown">
+            <p>
+                <h2><b>Graduating in</b></h2>
+            </p>
+            <p id="day"></p>
+            <p id="hour"></p>
+            <p id="minute"></p>
+            <p id="second"></p>
+            <script>
+                // Set the date we're counting down to
+                let countDownDate = new Date("Jul 6, 2024 00:00:00").getTime();
+
+                // Update the count down every 1 second
+                let x = setInterval(function() {
+
+                    // Get today's date and time
+                    let now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    let distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Display the result in the element with id="demo"
+                    document.getElementById("day").innerHTML = days + " days";
+                    document.getElementById("hour").innerHTML = hours + " hours";
+                    document.getElementById("minute").innerHTML = minutes + " minutes";
+                    document.getElementById("second").innerHTML = seconds + " seconds";
+
+                    // If the count down is finished, write some text
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("day").innerHTML = "";
+                        document.getElementById("hour").innerHTML = "I HAVE";
+                        document.getElementById("minute").innerHTML = "GRADUATED!";
+                        document.getElementById("second").innerHTML = "";
+                    }
+                }, 1000);
+            </script>
+        </div>
+        <p>
+            <form>
+                <input type="button" class="button" value="Back" onclick="history.back()">
+            </form>
+        </p>
+    </body>
+</html>
