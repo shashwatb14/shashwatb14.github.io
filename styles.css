@@ -145,7 +145,7 @@ header ul a:hover {
     height: 20px;
     background-color: var(--color-quaternary);
     border-radius: 20px;
-    margin-top: 32px;
+    margin-top: 24px;
     margin-bottom: 40px;
 }
 
@@ -244,7 +244,7 @@ h1:hover {
     cursor: none;
     background-color: var(--color-secondary);
     color: var(--color-primary-light);
-    box-shadow: 0px 0px 20px 10px rgb(32, 194, 14, 1)
+    box-shadow: 0px 0px 16px 8px rgb(32, 194, 14, 1)
 }
 
 h3 {
