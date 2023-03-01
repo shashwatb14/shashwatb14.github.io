@@ -205,7 +205,7 @@ button:hover {
 #home-content {
     transition: all 0.2s ease;
     font-size: 100%;
-    width: 240px;
+    width: 200px;
     height: 180px;
     margin-left: 6%;
     margin-bottom: 8px;
@@ -237,7 +237,7 @@ button:hover {
 }
 
 #home-content #float {
-    font-size: 200%;
+    font-size: 180%;
     text-align: center;
     margin-bottom: 10px;
 }
