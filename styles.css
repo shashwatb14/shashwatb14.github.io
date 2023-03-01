@@ -205,11 +205,11 @@ button:hover {
 #home-content {
     transition: all 0.2s ease;
     font-size: 100%;
-    width: 200px;
+    width: 220px;
     height: 180px;
     margin-left: 4%;
     margin-bottom: 8px;
-    margin-top: 10px;
+    margin-top: -20px;
     padding: 8px;
     border-radius: var(--border-radius);
     display: inline-block;
