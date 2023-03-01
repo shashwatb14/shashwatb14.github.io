@@ -139,23 +139,13 @@ header ul a:hover {
     font-size: 160%;
 }
 
-@media only screen and (max-width: 660px) {
-    header nav {
-        display: none;
-    }
-
-    #hamburger-icon {
-        display: block;
-    }
-}
-
 /* end of navigation bar */
 
 .main .line {
     height: 20px;
     background-color: var(--color-quaternary);
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 32px;
     margin-bottom: 40px;
 }
 
@@ -242,7 +232,7 @@ h1 {
     transition: all 0.2s ease;
     width: 260px;
     padding: 10px;
-    margin-bottom: 24px !important;
+    margin-bottom: 16px !important;
     margin: auto;
     text-align: center;
     font-size: 300% !important;
@@ -393,7 +383,16 @@ img {
     .nav-btn {
         visibility: hidden;
     }
+
     .swiper-pagination-bullet {
         visibility: visible;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
     }
 }
