@@ -202,11 +202,17 @@ button:hover {
     box-shadow: none !important;
 }
 
+.descriptors {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #home-content {
     transition: all 0.2s ease;
     font-size: 100%;
     width: 220px;
-    height: 180px;
+    height: 160px;
     margin-left: 4%;
     margin-bottom: 8px;
     margin-top: -20px;
