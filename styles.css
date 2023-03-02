@@ -76,7 +76,7 @@ header ul li {
 }
 
 header ul li:hover {
-    transform: scale(1.2);
+    transform: scale(1.08);
 }
 
 header ul a:hover {
@@ -84,7 +84,8 @@ header ul a:hover {
 }
 
 .current {
-    font-size: 140%;
+    font-size: 120%;
+    color: var(--color-secondary) !important;
 }
 
 #hamburger-icon {
