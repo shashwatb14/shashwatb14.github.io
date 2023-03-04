@@ -15,16 +15,22 @@
         <title>Countdown</title>
     </head>
     <body>
+        <!-- Mouse trailer by Hyperplexed -->
+        <div id="trailer"></div>
         <br class="user-select-none">
-        <br class="user-select-none">
+        <h1 data-value="countdown">countdown</h1>
         <div class="countdown">
             <p>
                 <h2><b>Graduating in</b></h2>
             </p>
-            <p id="day"></p>
-            <p id="hour"></p>
-            <p id="minute"></p>
-            <p id="second"></p>
+            <div class="time">
+                <p id="day"></p>
+                <p id="hour"></p>
+            </div>
+            <div class="time">
+                <p id="minute"></p>
+                <p id="second"></p>
+            </div>
             <script>
                 // Set the date we're counting down to
                 let countDownDate = new Date("Jul 6, 2024 00:00:00").getTime();
@@ -66,6 +72,10 @@
                 <input type="button" class="button" value="Back" onclick="history.back()">
             </form>
         </p>
+        <br class="user-select-none">
+        <br class="user-select-none">
+        <br class="user-select-none">
+        <br class="user-select-none">
         <footer class="text-center">
             Reach me:
             <br class="user-select-none">

@@ -243,7 +243,7 @@ button:hover {
 
 h1 {
     transition: all 0.2s ease;
-    width: 260px;
+    width: 280px;
     padding: 10px;
     margin-bottom: 16px !important;
     margin: auto;
@@ -314,8 +314,9 @@ h3 {
 .countdown {
     transition: all 0.2s ease;
     margin: auto;
-    width: 200px;
-    height: 240px;
+    margin-top: 32px;
+    width: 300px;
+    height: 164px;
     text-align: center;
     background-color: var(--color-primary);
     border-radius: var(--border-radius);
@@ -323,6 +324,15 @@ h3 {
     padding: 4px;
     font-size: 120%;
     box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 1);
+}
+
+.time > p {
+    display: inline-block;
+    margin: 10px;
+}
+
+.time {
+    margin-bottom: -4px;
 }
 
 .countdown h2 {
@@ -335,7 +345,7 @@ h3 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 24px !important;
+    margin-top: 16px !important;
     width: 200px;
     margin: auto;
     text-align: center;
