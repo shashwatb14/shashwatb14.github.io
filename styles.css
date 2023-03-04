@@ -533,3 +533,21 @@ footer {
 .fancy:hover > #line2 > .letter:nth-child(8) {
     transform: translateY(-24%) rotate(-16deg);
 }
+
+#trailer {
+    height: 24px;
+    width: 24px;
+    background-color: var(--color-tertiary);
+    border-radius: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+body:hover > #trailer {
+    opacity: 1;
+}
