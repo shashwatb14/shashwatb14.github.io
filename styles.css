@@ -262,6 +262,11 @@ h1:hover {
     box-shadow: 0px 0px 16px 8px rgb(32, 194, 14, 1)
 }
 
+h2 {
+    font-size: 240% !important;
+    font-weight: bolder !important;
+}
+
 h3 {
     font-size: 220% !important;
     text-decoration: underline double 2px;
@@ -412,6 +417,24 @@ img {
     .refs {
         width: 100% !important;
     }
+
+    #line1, #line2 {
+        display: block;
+    }
+
+    h2 {
+        font-size: 180% !important;
+    }
+
+    .fancy {
+        width: 100% !important;
+        height: 150px !important;
+        margin-bottom: 24px !important;
+    }
+
+    .fancy:hover {
+        background-color: transparent !important;
+    }
 }
 
 footer {
@@ -435,4 +458,78 @@ footer {
 
 .ref-link a:hover {
     color: var(--color-secondary);
+}
+
+.fancy {
+    text-align: center;
+    height: 100px;
+    width: 80%;
+    border-radius: 60px;
+    padding: 8px;
+    margin: auto;
+    margin-bottom: 64px;
+    transition: all 0.2s ease;
+}
+
+#line1, #line2 {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.letter {
+    display: inline-block;
+    transition: all 0.2s ease;
+    margin-top: 16px;
+}
+
+.fancy:hover {
+    background-color: var(--color-primary);
+}
+
+.fancy:hover > #line1 > .letter:nth-child(1) {
+    transform: translateY(-32%) rotate(-8deg);
+}
+
+.fancy:hover > #line1 > .letter:nth-child(2) {
+    transform: translateY(16%) rotate(-32deg);
+}
+
+.fancy:hover > #line1 > .letter:nth-child(3) {
+    transform: translateY(-20%) rotate(16deg);
+}
+
+.fancy:hover > #line1 > .letter:nth-child(4) {
+    transform: translateY(24%) rotate(-8deg);
+}
+
+.fancy:hover > #line2 > .letter:nth-child(1) {
+    transform: translateY(32%) rotate(32deg);
+}
+
+.fancy:hover > #line2 > .letter:nth-child(2) {
+    transform: translateY(-20%) rotate(-16deg);
+}
+
+.fancy:hover > #line2 > .letter:nth-child(3) {
+    transform: translateY(20%);
+}
+
+.fancy:hover > #line2 > .letter:nth-child(4) {
+    transform: translateY(-32%) rotate(8deg);
+}
+
+.fancy:hover > #line2 > .letter:nth-child(5) {
+    transform: translateY(12%) rotate(-24deg);
+}
+
+.fancy:hover > #line2 > .letter:nth-child(6) {
+    transform: translateY(-20%) rotate(-4deg);
+}
+
+.fancy:hover > #line2 > .letter:nth-child(7) {
+    transform: translateY(40%) rotate(8deg);
+}
+
+.fancy:hover > #line2 > .letter:nth-child(8) {
+    transform: translateY(-24%) rotate(-16deg);
 }
