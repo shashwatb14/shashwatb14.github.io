@@ -3,7 +3,7 @@ function toggleMobileMenu(menu) {
 }
 
 // hyperplexed hacker text effect
-window.onload = function(){ 
+window.onload = function() { 
     const letters = "abcdefghijklmnopqrstuvwxyz";
 
     document.querySelector("h1").onmouseover = event => {
