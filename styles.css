@@ -303,18 +303,15 @@ h3 {
 
 .countdown {
     transition: all 0.2s ease;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 360px;
+    margin: auto;
+    width: 200px;
+    height: 240px;
     text-align: center;
     background-color: var(--color-primary);
     border-radius: var(--border-radius);
     font-family: 'Poppins', sans-serif;
-    padding: 20px;
-    font-size: 184%;
+    padding: 4px;
+    font-size: 120%;
     box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 1);
 }
 
@@ -328,7 +325,9 @@ h3 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 300px;
+    margin-top: 24px !important;
+    width: 200px;
+    margin: auto;
     text-align: center;
     font-weight: bold;
     background: var(--color-primary);
@@ -336,18 +335,17 @@ h3 {
     border-radius: var(--border-radius);
     padding: 8px 16px;
     border: none;
-    margin-top: 480px;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 1);
 }
 
 .button:hover {
     background: var(--color-primary-light);
-    box-shadow: 0px 0px 48px 24px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 1);
 }
 
 .countdown:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 32px 32px rgba(0, 0, 0, 1);
+    cursor: none;
+    box-shadow: 0px 0px 24px 24px rgba(0, 0, 0, 1);
     background-color: var(--color-primary-light);
 }
 
