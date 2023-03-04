@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 body {
     --color-primary: #000;
     --color-primary-light: #222;
@@ -10,6 +15,10 @@ body {
     background-color: var(--color-primary-light) !important;
     color: var(--color-tertiary) !important;
     margin: 0;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 8rem;
+    box-sizing: inherit;
 }
 
 .main {
@@ -280,7 +289,7 @@ h3 {
 }
 
 .main a {
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
     color: var(--color-secondary) !important;
     text-decoration: underline;
     text-decoration-color: rgba(0, 128, 128, 0);
@@ -293,7 +302,7 @@ h3 {
 }
 
 .countdown {
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -315,7 +324,7 @@ h3 {
 }
 
 .button {
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -351,7 +360,7 @@ img {
 }
 
 .nav-btn {
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
     height: 48px !important;
     width: 48px !important;
     background: rgba(0, 0, 0, 0.4);
@@ -400,10 +409,23 @@ img {
 
 footer {
     background-color: var(--color-primary);
-    padding: 24px;
+    padding: 16px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .refs {
-    width: 50%;
+    width: 40%;
     margin: auto;
+    margin-bottom: 24px;
+}
+
+.ref-link a {
+    color: var(--color-tertiary);
+    transition: all 0.2s ease;
+}
+
+.ref-link a:hover {
+    color: var(--color-secondary);
 }
