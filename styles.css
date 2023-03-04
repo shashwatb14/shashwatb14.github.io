@@ -403,6 +403,10 @@ img {
     #hamburger-icon {
         display: block;
     }
+
+    .refs {
+        width: 100% !important;
+    }
 }
 
 footer {
