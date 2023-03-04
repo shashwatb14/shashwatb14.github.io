@@ -397,3 +397,13 @@ img {
         display: block;
     }
 }
+
+footer {
+    background-color: var(--color-primary);
+    padding: 24px;
+}
+
+.refs {
+    width: 50%;
+    margin: auto;
+}
