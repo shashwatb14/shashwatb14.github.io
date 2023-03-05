@@ -25,9 +25,9 @@
             <div class="name"><a data-value="Shashwat" class="interactable" href="index.html">Shashwat</a></div>
             <nav>
                 <ul>
-                    <li><a class="interactable" href="index.html">&#60;<b>home</b>&#62;</a></li>
-                    <li><a class="current interactable" href="projects.html">&#60;<b>projects</b>&#62;</a></li>
-                    <li><a class="interactable" href="about.html">&#60;<b>about</b>&#62;</a></li>
+                    <li><a data-value="&#60;home&#62;" class="interactable" href="index.html">&#60;<b>home</b>&#62;</a></li>
+                    <li><a data-value="&#60;projects&#62;" class="current interactable" href="projects.html">&#60;<b>projects</b>&#62;</a></li>
+                    <li><a data-value="&#60;about&#62;" class="interactable" href="about.html">&#60;<b>about</b>&#62;</a></li>
                 </ul>
             </nav>
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -35,9 +35,9 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
                 <ul class="mobile-menu">
-                    <li><a href="index.html">&#60;<b>home</b>&#62;</a></li>
-                    <li><a href="projects.html">&#60;<b>projects</b>&#62;</a></li>
-                    <li><a href="about.html">&#60;<b>about</b>&#62;</a></li>
+                    <li><a data-value="&#60;home&#62;" href="index.html">&#60;<b>home</b>&#62;</a></li>
+                    <li><a data-value="&#60;projects&#62;" href="projects.html">&#60;<b>projects</b>&#62;</a></li>
+                    <li><a data-value="&#60;about&#62;" href="about.html">&#60;<b>about</b>&#62;</a></li>
                 </ul>
             </div>
         </header>
@@ -66,10 +66,10 @@
                 I hadn't done a ton of projects before 2023 because I was still relatively new to programming,
                 however, I did try to create some simple programs and applications using Python as well as a website as outlined below:
                 <ul>
-                    <li><a class="interactable" href="#virtual-assistant">Virtual Assistant</a></li>
-                    <li><a class="interactable" href="#crazy-numbers">Crazy Numbers</a></li>
-                    <li><a class="interactable" href="#block-world">Block World</a></li>
-                    <li><a class="interactable" href="#website">Personal website for a fictitious client</a></li>
+                    <li><a data-value="Virtual Assistant" class="interactable" href="#virtual-assistant">Virtual Assistant</a></li>
+                    <li><a data-value="Crazy Numbers" class="interactable" href="#crazy-numbers">Crazy Numbers</a></li>
+                    <li><a data-value="Block World" class="interactable" href="#block-world">Block World</a></li>
+                    <li><a data-value="Personal website for a fictitious client" class="interactable" href="#website">Personal website for a fictitious client</a></li>
                 </ul>
             </p>
             <br>
@@ -77,7 +77,7 @@
             <h3 id="virtual-assistant">Virtual Assistant</h3>
             <p>
                 This was the first major project that I did for my
-                <a class="interactable" href="https://www.ibo.org/programmes/middle-years-programme/" target="_blank">MYP Personal Project</a>.
+                <a data-value="MYP Personal Project" class="interactable" href="https://www.ibo.org/programmes/middle-years-programme/" target="_blank">MYP Personal Project</a>.
                 It enabled me to learn much more about Python and think independently.
                 I did not use Natural Language Processing (NLP) as that was too complicated for me at the time, however,
                 I believe that I can take this project forward and implement a more realistic version of a virtual assistant
@@ -85,20 +85,20 @@
                 The features that are currently integrated within this version include:
                 <ul>
                     <li>Speech recognition using the
-                        <a class="interactable" href="https://pypi.org/project/SpeechRecognition/" target="_blank">SpeechRecognition</a>
+                        <a data-value="SpeechRecognition" class="interactable" href="https://pypi.org/project/SpeechRecognition/" target="_blank">SpeechRecognition</a>
                          library (Speech-to-Text)</li>
-                    <li>Text-to-Speech using the <a class="interactable" href="https://pypi.org/project/pyttsx3/" target="_blank">pyttsx3</a>
+                    <li>Text-to-Speech using the <a data-value="pyttsx3" class="interactable" href="https://pypi.org/project/pyttsx3/" target="_blank">pyttsx3</a>
                          library</li>
                     <li>Jokes, puns, and facts that are randomly selected from a specified list
                         (could use an API now that I have learned about it)</li>
                     <li>Wishing the user based on the time and also telling the time using the
-                        <a class="interactable" href="https://docs.python.org/3/library/datetime.html" target="_blank">datetime</a> module</li>
+                        <a data-value="datetime" class="interactable" href="https://docs.python.org/3/library/datetime.html" target="_blank">datetime</a> module</li>
                     <li>Simple answers to basic questions (origin, creator, etc.)</li>
                     <li>Wikipedia searches using the
-                        <a class="interactable" href="https://pypi.org/project/wikipedia/" target="_blank">wikipedia</a> library</li>
+                        <a data-value="wikipedia" class="interactable" href="https://pypi.org/project/wikipedia/" target="_blank">wikipedia</a> library</li>
                     <li>Opening the news
-                        (<a class="interactable" href="https://www.straitstimes.com" target="_blank">The Straits Times</a>) and searching the
-                        Internet using the <a class="interactable" href="https://docs.python.org/3/library/webbrowser.html" target="_blank">webbrowser</a>
+                        (<a data-value="The Straits Times" class="interactable" href="https://www.straitstimes.com" target="_blank">The Straits Times</a>) and searching the
+                        Internet using the <a data-value="webbrowser" class="interactable" href="https://docs.python.org/3/library/webbrowser.html" target="_blank">webbrowser</a>
                         module</li>
                     <li>Self-made simple games including:
                         <ul>
@@ -108,18 +108,18 @@
                         </ul>
                     </li>
                     <li>Opening applications (YouTube, Chrome, Atom, Discord) using the
-                        <a class="interactable" href="https://docs.python.org/3/library/webbrowser.html" target="_blank">webbrowser</a>
+                        <a data-value="webbrowser" class="interactable" href="https://docs.python.org/3/library/webbrowser.html" target="_blank">webbrowser</a>
                          module and the
-                         <a class="interactable" href="https://docs.python.org/3/library/os.html" target="_blank">os</a> module</li>
+                         <a data-value="os" class="interactable" href="https://docs.python.org/3/library/os.html" target="_blank">os</a> module</li>
                     <li>Shutting down and logging off the computer using the
-                        <a class="interactable" href="https://docs.python.org/3/library/subprocess.html" target="_blank">subprocess</a> module</li>
+                        <a data-value="subprocess" class="interactable" href="https://docs.python.org/3/library/subprocess.html" target="_blank">subprocess</a> module</li>
                     <li>Cheesy easter eggs inspired by Google Assistant!</li>
                 </ul>
                 I was able to expand my knowledge immensely through this project and also wrote my first decent program
                 without following any tutorials - Magic 8-ball. From thereon, there was no stopping me, and I went on to
                 program all the games of the virtual assistant without any tutorials. However, for most of the other features,
                 I had to research and follow tutorials (like
-                <a class="interactable" href="https://towardsdatascience.com/how-to-build-your-own-ai-personal-assistant-using-python-f57247b4494b" target="_blank">this</a>)
+                <a data-value="this" class="interactable" href="https://towardsdatascience.com/how-to-build-your-own-ai-personal-assistant-using-python-f57247b4494b" target="_blank">this</a>)
                 to first understand the basic concepts. One thing that I tried to focus
                 on was accessibility. I tried to make my program as accessible as possible by making sure that the program
                 both spoke and printed out text whenever there was an output. Similarly, I added manual user input through
@@ -147,10 +147,10 @@
                 increasing with each level. Some features of this game include:
                 <ul>
                     <li>Random number generation using the
-                        <a class="interactable" href="https://docs.python.org/3/library/random.html" target="_blank">random</a> module</li>
+                        <a data-value="random" class="interactable" href="https://docs.python.org/3/library/random.html" target="_blank">random</a> module</li>
                     <li>Saving the high score in a <code>.txt</code> file</li>
                     <li>Calculating the time taken for each question to be answered using the
-                        <a class="interactable" href="https://docs.python.org/3/library/time.html" target="_blank">time</a> module</li>
+                        <a data-value="time" class="interactable" href="https://docs.python.org/3/library/time.html" target="_blank">time</a> module</li>
                     <li>Use of certain visual and textual effects to make the game more engaging</li>
                     <li><u>BONUS</u>: added average time is taken per question and the total number of questions attempted
                         after gaining more experience in programming</li>
@@ -167,15 +167,15 @@
                 I undertook this project because I just wanted to build something fun.
                 (or perhaps something that would interest my friends and make me look cool 😎)
                 So, I started following incredible
-                <a class="interactable" href="https://www.youtube.com/watch?v=vX4l-qozib8&list=PLmP1LNMzp97pQe1FiGpdOLKeWYfTMZM7n" target="_blank">tutorials</a>
-                 by the <a class="interactable" href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg" target="_blank">RedHenDev</a>.
+                <a data-value="tutorials" class="interactable" href="https://www.youtube.com/watch?v=vX4l-qozib8&list=PLmP1LNMzp97pQe1FiGpdOLKeWYfTMZM7n" target="_blank">tutorials</a>
+                 by the <a data-value="RedHenDev" class="interactable" href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg" target="_blank">RedHenDev</a>.
                  However, I was just coding along with him,
                 and not understanding the tiny specific details of every line of code. I did get the gist of the ideas that he implemented,
                 however, I was slightly disheartened as I wasn't able to completely understand everything. Nevertheless,
                 it was quite fun and satisfying to see the program work. Some particular features of this Minecraft ripoff included:
                 <ul>
                     <li>Perlin noise for terrain generation using the
-                        <a class="interactable" href="https://pypi.org/project/perlin-noise/" target="_blank">perlin-noise</a> library</li>
+                        <a data-value="perlin-noise" class="interactable" href="https://pypi.org/project/perlin-noise/" target="_blank">perlin-noise</a> library</li>
                     <li>Improved gravity system to make the game efficient</li>
                     <li>Effective terrain generation with a unique swirling technique (infinite)</li>
                     <li>The capability of building with different materials and mining only built materials</li>
@@ -214,8 +214,8 @@
             </p>
             <p>
                 However, I recently decided to start again and work on a second version, again following the
-                <a class="interactable" href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg" target="_blank">RedHenDev</a> with his new
-                <a class="interactable" href="https://www.youtube.com/watch?v=fofR4yzTCdA&list=PLmP1LNMzp97rIbwnGHhjjobHHqWekxy8Y" target="_blank">tutorials series</a>.
+                <a data-value="RedHenDev" class="interactable" href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg" target="_blank">RedHenDev</a> with his new
+                <a data-value="tutorials series" class="interactable" href="https://www.youtube.com/watch?v=fofR4yzTCdA&list=PLmP1LNMzp97rIbwnGHhjjobHHqWekxy8Y" target="_blank">tutorials series</a>.
                 With the previous version abandoned, I decided on focusing on adding features that I wasn't able to in the previous version.
                 So far, many of them are similar, but a few unique ones include:
                 <ul>
@@ -266,7 +266,7 @@
 
             <h3 id="website">Personal website for a fictitious client</h3>
             <p>
-                I had to make this website (<a class="interactable" href="https://www.ofs.edu.sg/user/s_bhandari/index.html" target="_blank">click here</a>)
+                I had to make this website (<a data-value="click here" class="interactable" href="https://www.ofs.edu.sg/user/s_bhandari/index.html" target="_blank">click here</a>)
                 as part of my school assignment in ICT. I devoted a lot of time and effort to making it as appealing as possible for the end user.
                 I took many features into careful consideration as well. However, I did not implement a responsive design (unlike this website)
                 as I had a lack of knowledge in the field. The website icorporates 6 total pages, 2 of which haven't been completed and

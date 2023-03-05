@@ -24,6 +24,15 @@ body {
     box-sizing: inherit;
 }
 
+a {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 116%;
+    font-weight: bolder;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: var(--color-tertiary);
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -64,7 +73,7 @@ header {
 }
 
 header a {
-    transition: all 0.2s ease;
+    color: var(--color-tertiary);
     text-decoration: none;
 }
 
@@ -76,7 +85,6 @@ header a {
 }
 
 .name a {
-    transition: all 0.2s ease;
     padding: 4px 4px;
     border-radius: var(--border-radius);
     background: var(--color-secondary);
@@ -95,10 +103,6 @@ header ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-header ul a {
-    color: var(--color-tertiary) !important;
 }
 
 header ul li {
@@ -318,7 +322,6 @@ h3 {
 }
 
 .main a {
-    transition: all 0.2s ease;
     color: var(--color-secondary) !important;
     text-decoration: underline;
     text-decoration-color: rgba(0, 128, 128, 0);
@@ -326,7 +329,6 @@ h3 {
 }
 
 .main a:hover {
-    color: var(--color-quaternary) !important;
     text-decoration-color: rgba(0, 128, 128, 1);
 }
 
@@ -487,7 +489,6 @@ footer {
 
 .ref-link a {
     color: var(--color-tertiary);
-    transition: all 0.2s ease;
 }
 
 .ref-link a:hover {

@@ -4,27 +4,35 @@ function toggleMobileMenu(menu) {
 
 // hyperplexed effects
 window.onload = function() { 
-    const letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ<>";
+    const elements = document.querySelectorAll("a");
+    
+    if (elements) {
+        elements.forEach(function(element) {
+            if (element.parentElement.className === "ref-link") return;
+            element.onmouseover = event => {
+                let iterations = 0;
 
-    document.querySelector("a").onmouseover = event => {
-        let iterations = 0;
+                if (!event.target.dataset.value) return;
 
-        const interval = setInterval(() => {
-            event.target.innerText = event.target.innerText.split("")
-            .map((letter, index) => {
-                if (index < iterations) {
-                    return event.target.dataset.value[index];
-                }
+                const interval = setInterval(() => {
+                    event.target.innerText = event.target.innerText.split("")
+                    .map((letter, index) => {
+                        if (index < iterations) {
+                            return event.target.dataset.value[index];
+                        }
 
-                return letters[Math.floor(Math.random() * 52)]
-            })
-            .join("");
+                        return letters[Math.floor(Math.random() * 54)]
+                    })
+                    .join("");
 
-        if (iterations >= 9) clearInterval(interval);
+                if (iterations >= event.target.dataset.value.length) clearInterval(interval);
 
-        iterations += 1 / 2;
-        }, 20);
-    };
+                iterations += 1;
+                }, 20);
+            };
+        });
+    }
 
     document.querySelector("h1").onmouseover = event => {
         let iterations = 0;
@@ -40,11 +48,11 @@ window.onload = function() {
             })
             .join("");
 
-        if (iterations >= 9) clearInterval(interval);
+        if (iterations >= event.target.dataset.value.length) clearInterval(interval);
 
         iterations += 1 / 2;
         }, 40);
-    };
+    }
 
     const trailer = document.getElementById("trailer");
 
@@ -52,7 +60,7 @@ window.onload = function() {
         const x = e.clientX - trailer.offsetWidth / 2,
             y = e.clientY - trailer.offsetHeight / 2;
 
-        keyframes = {}
+        let keyframes = {}
         if (interacting) {
             keyframes = {
                 transform: `translate(${x}px, ${y}px) scale(${interacting ? 4 : 1})`,
@@ -77,4 +85,4 @@ window.onload = function() {
         
         animateTrailer(e, interacting);
     }
-};
+}
