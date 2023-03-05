@@ -161,7 +161,7 @@ header ul a:hover {
     display: none;
     position: absolute;
     top: 60px;
-    left: 0;
+    left: -16px;
     height: calc(100vh - 60px);
     width: 100%;
 }

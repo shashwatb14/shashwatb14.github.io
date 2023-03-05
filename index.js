@@ -7,7 +7,6 @@ window.onload = function() {
     const letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     document.querySelector("a").onmouseover = event => {
-        console.log("works");
         let iterations = 0;
 
         const interval = setInterval(() => {
