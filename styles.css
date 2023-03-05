@@ -259,7 +259,7 @@ h1:hover {
     cursor: none;
     background-color: var(--color-secondary);
     color: var(--color-primary-light);
-    box-shadow: 0px 0px 16px 8px rgb(32, 194, 14, 1)
+    box-shadow: 0px 0px 16px 8px rgb(32, 194, 14)
 }
 
 h2 {
@@ -314,7 +314,7 @@ h3 {
 .countdown {
     transition: all 0.2s ease;
     margin: auto;
-    margin-top: 32px;
+    margin-top: 48px;
     width: 300px;
     height: 164px;
     text-align: center;
@@ -345,7 +345,7 @@ h3 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 16px !important;
+    margin-top: 24px !important;
     width: 200px;
     margin: auto;
     text-align: center;
@@ -444,6 +444,11 @@ img {
 
     .fancy:hover {
         background-color: transparent !important;
+    }
+
+    #trailer {
+        background-color: transparent !important;
+        border: none !important;
     }
 }
 
@@ -556,6 +561,7 @@ footer {
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.8s ease;
+    border: 1px solid var(--color-tertiary)
 }
 
 body:hover > #trailer {
