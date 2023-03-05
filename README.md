@@ -1,6 +1,6 @@
-# novas-coder.github.io
+# shash-b.github.io
 
-[Link to Github Pages](https://novas-coder.github.io)
+[Link to Github Pages](https://shash-b.github.io)
 
 ---
 
