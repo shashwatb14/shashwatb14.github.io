@@ -467,7 +467,7 @@ img {
         background-color: transparent !important;
     }
 
-    #trailer {
+    #trailer, #trailer2, #trailer3, #trailer4 {
         background-color: transparent !important;
         border: none !important;
     }
@@ -569,9 +569,7 @@ footer {
     transform: translateY(-24%) rotate(-16deg);
 }
 
-#trailer {
-    height: 12px;
-    width: 12px;
+#trailer, #trailer2, #trailer3, #trailer4 {
     background-color: var(--color-tertiary);
     border-radius: 20px;
     position: fixed;
@@ -584,6 +582,27 @@ footer {
     border: 1px solid var(--color-tertiary)
 }
 
-body:hover > #trailer {
+#trailer {
+    height: 16px;
+    width: 16px;
+}
+
+#trailer2 {
+    height: 12px;
+    width: 12px;
+}
+
+#trailer3 {
+    height: 8px;
+    width: 8px;
+}
+
+#trailer4 {
+    height: 4px;
+    width: 4px;
+}
+
+
+body:hover > #trailer, body:hover > #trailer2, body:hover > #trailer3, body:hover > #trailer4 {
     opacity: 1;
 }

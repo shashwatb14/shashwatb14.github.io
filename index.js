@@ -55,26 +55,79 @@ window.onload = function() {
     }
 
     const trailer = document.getElementById("trailer");
+    const trailer2 = document.getElementById("trailer2");
+    const trailer3 = document.getElementById("trailer3");
+    const trailer4 = document.getElementById("trailer4");
+
 
     const animateTrailer = (e, interacting) => {
-        const x = e.clientX - trailer.offsetWidth / 2,
-            y = e.clientY - trailer.offsetHeight / 2;
+        const x1 = e.clientX - trailer.offsetWidth / 2,
+              y1 = e.clientY - trailer.offsetHeight / 2;
+        const x2 = e.clientX - trailer2.offsetWidth / 2,
+              y2 = e.clientY - trailer2.offsetHeight / 2;
+        const x3 = e.clientX - trailer3.offsetWidth / 2,
+              y3 = e.clientY - trailer3.offsetHeight / 2;
+        const x4 = e.clientX - trailer4.offsetWidth / 2,
+              y4 = e.clientY - trailer4.offsetHeight / 2;
 
-        let keyframes = {}
+        let keyframes1 = {}
+        let keyframes2 = {}
+        let keyframes3 = {}
+        let keyframes4 = {}
+        
         if (interacting) {
-            keyframes = {
-                transform: `translate(${x}px, ${y}px) scale(${interacting ? 4 : 1})`,
+            keyframes1 = {
+                transform: `translate(${x1}px, ${y1}px) scale(${interacting ? 2 : 1})`,
+                backgroundColor: `transparent`
+            }
+            keyframes2 = {
+                transform: `translate(${x2}px, ${y2}px) scale(${interacting ? 2 : 1})`,
+                backgroundColor: `transparent`
+            }
+            keyframes3 = {
+                transform: `translate(${x3}px, ${y3}px) scale(${interacting ? 2 : 1})`,
+                backgroundColor: `transparent`
+            }
+            keyframes4 = {
+                transform: `translate(${x4}px, ${y4}px) scale(${interacting ? 2 : 1})`,
                 backgroundColor: `transparent`
             }
         } else {
-            keyframes = {
-                transform: `translate(${x}px, ${y}px) scale(${interacting ? 4 : 1})`,
-                backgroundColor: `var(--color-tertiary)`,
+            keyframes1 = {
+                transform: `translate(${x1}px, ${y1}px) scale(${interacting ? 2 : 1})`,
+                backgroundColor: `var(--color-tertiary)`
+            }
+            keyframes2 = {
+                transform: `translate(${x2}px, ${y2}px) scale(${interacting ? 2 : 1})`,
+                backgroundColor: `var(--color-tertiary)`
+            }
+            keyframes3 = {
+                transform: `translate(${x3}px, ${y3}px) scale(${interacting ? 2 : 1})`,
+                backgroundColor: `var(--color-tertiary)`
+            }
+            keyframes4 = {
+                transform: `translate(${x4}px, ${y4}px) scale(${interacting ? 2 : 1})`,
+                backgroundColor: `var(--color-tertiary)`
             }
         }
 
-        trailer.animate(keyframes, {
+        trailer.animate(keyframes1, {
             duration: 800,
+            fill: "forwards"
+        });
+
+        trailer2.animate(keyframes2, {
+            duration: 1600,
+            fill: "forwards"
+        });
+
+        trailer3.animate(keyframes3, {
+            duration: 2400,
+            fill: "forwards"
+        });
+
+        trailer4.animate(keyframes4, {
+            duration: 3200,
             fill: "forwards"
         });
     }
