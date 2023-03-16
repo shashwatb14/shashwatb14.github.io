@@ -570,8 +570,8 @@ footer {
 }
 
 #trailer {
-    height: 24px;
-    width: 24px;
+    height: 12px;
+    width: 12px;
     background-color: var(--color-tertiary);
     border-radius: 20px;
     position: fixed;
