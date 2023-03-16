@@ -64,12 +64,12 @@ window.onload = function() {
         
         if (interacting) {
             keyframes1 = {
-                transform: `translate(${x1}px, ${y1}px) scale(${interacting ? 2 : 1})`,
+                transform: `translate(${x1}px, ${y1}px) scale(${interacting ? 4 : 1})`,
                 backgroundColor: `transparent`
             }
         } else {
             keyframes1 = {
-                transform: `translate(${x1}px, ${y1}px) scale(${interacting ? 2 : 1})`,
+                transform: `translate(${x1}px, ${y1}px) scale(${interacting ? 4 : 1})`,
                 backgroundColor: `var(--color-tertiary)`
             }
         }
