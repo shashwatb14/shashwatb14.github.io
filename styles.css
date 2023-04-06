@@ -38,18 +38,17 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--color-primary);
+    background-color: transparent !important;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-secondary);
+    background-color: rgba(255, 255, 255, 0.12);
     border-radius: var(--border-radius);
     width: 6px;
-    margin: auto;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-quaternary);
+    background-color: rgba(255, 255, 255, 0.24);
 }
 
 .main {
@@ -77,21 +76,21 @@ header a {
     text-decoration: none;
 }
 
-.name {
+#name {
     font-weight: bold;
     font-size: 20px;
     display: flex;
     align-items: center;
 }
 
-.name a {
+#name a {
     padding: 4px 4px;
     border-radius: var(--border-radius);
     background: var(--color-secondary);
     color: var(--color-primary-light) !important;
 }
 
-.name a:hover {
+#name a:hover {
     transform: scale(1.02) translateY(-2px);
     box-shadow: rgba(0, 128, 128, 0.6) -4px 4px;
     color: var(--color-primary);
@@ -118,7 +117,7 @@ header ul a:hover {
     color: var(--color-quaternary) !important;
 }
 
-.current {
+#current {
     font-size: 120%;
     color: var(--color-secondary) !important;
 }
@@ -139,21 +138,21 @@ header ul a:hover {
     border-radius: var(--border-radius);
 }
 
-.open .bar1 {
+.open #bar1 {
     -webkit-transform: rotate(-45deg) translate(-8px, 7px);
     transform: rotate(-45deg) translate(-8px, 7px);
 }
 
-.open .bar2 {
+.open #bar2 {
     opacity: 0;
 }
 
-.open .bar3 {
+.open #bar3 {
     -webkit-transform: rotate(45deg) translate(-7px, -6px);
     transform: rotate(45deg) translate(-7px, -6px);
 }
 
-.open .mobile-menu {
+.open #mobile-menu {
     background-color: var(--color-primary-light);
     display: flex;
     flex-direction: column;
@@ -161,7 +160,7 @@ header ul a:hover {
     justify-content: flex-start;
 }
 
-.mobile-menu {
+#mobile-menu {
     display: none;
     position: absolute;
     top: 60px;
@@ -170,7 +169,7 @@ header ul a:hover {
     width: 100%;
 }
 
-.mobile-menu li {
+#mobile-menu li {
     margin: 16px 0;
     font-size: 160%;
 }
@@ -220,13 +219,13 @@ button:hover {
     box-shadow: none !important;
 }
 
-.descriptors {
+#descriptors {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-#home-content {
+.home-content {
     transition: all 0.2s ease;
     width: 240px;
     height: 160px;
@@ -238,7 +237,7 @@ button:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-    #home-content {
+    .home-content {
         display: block;
         margin: auto;
         margin-top: -32px;
@@ -246,7 +245,7 @@ button:hover {
     }
 }
 
-#home-content:hover {
+.home-content:hover {
     background-color: var(--color-primary);
     cursor: none;
     animation: expand 2s ease-in-out infinite;
@@ -258,7 +257,7 @@ button:hover {
     100% {transform: translateY(0px); box-shadow: 0px 0px 40px 10px rgba(0, 128, 128, 0.6);}
 }
 
-#home-content #float {
+.home-content .float {
     font-size: 180%;
     text-align: center;
     margin-bottom: 10px;
@@ -295,7 +294,7 @@ h3 {
     text-decoration: underline double 2px;
 }
 
-.main .projects {
+.main #projects {
     font-family: 'Cutive Mono', monospace !important;
     margin-top: 72px !important;
     width: 50%;
@@ -304,7 +303,7 @@ h3 {
     font-size: 120%;
 }
 
-.projects #projects {
+#projects a {
     transition: all 0.2s ease;
     box-shadow: 0px 0px 20px 4px rgba(32, 194, 14, 1);
     background: transparent;
@@ -314,7 +313,7 @@ h3 {
     color: var(--color-secondary);
 }
 
-.projects #projects:hover {
+#projects a:hover {
     background: var(--color-secondary);
     color: var(--color-primary) !important;
     transform: scale(1.1);
