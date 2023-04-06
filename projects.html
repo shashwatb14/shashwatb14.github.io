@@ -22,19 +22,19 @@
         <div id="trailer"></div>
         <!-- Navigation Bar by Adam from JavaScript Academy https://www.youtube.com/watch?v=OjQP7rPwJyE -->
         <header>
-            <div class="name"><a data-value="Shashwat" class="interactable" href="index.html">Shashwat</a></div>
+            <div id="name"><a data-value="Shashwat" class="interactable" href="index.html">Shashwat</a></div>
             <nav>
                 <ul>
                     <li><a data-value="&#60;home&#62;" class="interactable" href="index.html">&#60;<b>home</b>&#62;</a></li>
-                    <li><a data-value="&#60;projects&#62;" class="current interactable" href="projects.html">&#60;<b>projects</b>&#62;</a></li>
+                    <li><a data-value="&#60;projects&#62;" class="interactable" id="current"  href="projects.html">&#60;<b>projects</b>&#62;</a></li>
                     <li><a data-value="&#60;about&#62;" class="interactable" href="about.html">&#60;<b>about</b>&#62;</a></li>
                 </ul>
             </nav>
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <ul class="mobile-menu">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+                <ul id="mobile-menu">
                     <li><a data-value="&#60;home&#62;" href="index.html">&#60;<b>home</b>&#62;</a></li>
                     <li><a data-value="&#60;projects&#62;" href="projects.html">&#60;<b>projects</b>&#62;</a></li>
                     <li><a data-value="&#60;about&#62;" href="about.html">&#60;<b>about</b>&#62;</a></li>
@@ -68,6 +68,7 @@
                 <ul>
                     <li><a data-value="Virtual Assistant" class="interactable" href="#virtual-assistant">Virtual Assistant</a></li>
                     <li><a data-value="Crazy Numbers" class="interactable" href="#crazy-numbers">Crazy Numbers</a></li>
+                    <li><a data-value="Discord Bot (N - 1)" class="interactable" href="#discord-bot">Discord Bot (N - 1)</a></li>
                     <li><a data-value="Block World" class="interactable" href="#block-world">Block World</a></li>
                     <li><a data-value="Personal website for a fictitious client" class="interactable" href="#website">Personal website for a fictitious client</a></li>
                 </ul>
@@ -159,6 +160,12 @@
                 Initially, as I started developing the game, I realized that a lot of the statements were being repeated
                  - it felt like I was writing spaghetti code. However, I soon came to realize this and implemented functions
                  within my program. It still isn't perfect but it <em>is</em> much better.
+            </p>
+            <br>
+
+            <h3 id="discord-bot">Discord Bot (N - 1)</h3>
+            <p>
+                
             </p>
             <br>
 
