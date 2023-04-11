@@ -229,8 +229,8 @@ button:hover {
     transition: all 0.2s ease;
     width: 240px;
     height: 160px;
-    margin-bottom: 8px;
-    margin-top: -20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     padding: 8px;
     border-radius: var(--border-radius);
     display: inline-block;
@@ -296,7 +296,7 @@ h3 {
 
 .main #projects {
     font-family: 'Cutive Mono', monospace !important;
-    margin-top: 72px !important;
+    margin-top: 88px !important;
     width: 50%;
     margin: auto;
     text-align: center;
@@ -568,6 +568,8 @@ footer {
     transform: translateY(-24%) rotate(-16deg);
 }
 
+/* mouse trailer  */
+
 #trailer {
     height: 12px;
     width: 12px;
@@ -585,4 +587,74 @@ footer {
 
 body:hover > #trailer{
     opacity: 1;
+}
+
+/* end of mouse trailer  */
+
+#cards {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card-project {
+    background: var(--color-primary);
+    margin: 16px;
+    width: 320px;
+    height: 216px;
+    border: var(--color-secondary) solid 2px !important;
+    border-radius: var(--border-radius);
+    padding: 12px;
+}
+
+.card-project a {
+    color: var(--color-tertiary) !important;
+    cursor: pointer;
+}
+
+.card-project h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+.card-project .rule {
+    background-color: var(--color-tertiary) !important;
+    border-radius: var(--border-radius);
+    margin-bottom: 8px;
+    height: 8px;
+}
+
+.card-project p {
+    margin-top: 20px !important;
+    margin-bottom: 4px;
+}
+
+.card-footer {
+    margin-top: 8px;
+    margin-left: -14px !important;
+    width: 320px;
+}
+
+.tags {
+    display: inline-block;
+}
+
+.tag {
+    background-color: var(--color-primary-light);
+    padding: 4px;
+    border-radius: var(--border-radius);
+    color: var(--color-secondary);
+    font-size: 90%;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24;
+
+  float: right;
 }
