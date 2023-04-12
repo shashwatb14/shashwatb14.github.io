@@ -185,6 +185,10 @@ header ul a:hover {
 }
 
 ul {
+    list-style: disc;
+}
+
+.inner {
     list-style: circle;
 }
 
@@ -612,6 +616,10 @@ body:hover > #trailer{
     cursor: pointer;
 }
 
+.card-project a:hover {
+    color: var(--color-quaternary) !important;
+}
+
 .card-project h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
@@ -657,4 +665,15 @@ body:hover > #trailer{
   'opsz' 24;
 
   float: right;
+}
+
+#time-info {
+    text-align: center;
+    margin-top: -24px;
+}
+
+#time-info hr {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 12px;
 }
