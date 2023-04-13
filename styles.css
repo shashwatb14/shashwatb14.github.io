@@ -74,6 +74,7 @@ header {
 header a {
     color: var(--color-tertiary);
     text-decoration: none;
+    font-size: 120%;
 }
 
 #name {
@@ -118,7 +119,7 @@ header ul a:hover {
 }
 
 #current {
-    font-size: 120%;
+    font-size: 140%;
     color: var(--color-secondary) !important;
 }
 
@@ -233,8 +234,8 @@ button:hover {
     transition: all 0.2s ease;
     width: 240px;
     height: 160px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     padding: 8px;
     border-radius: var(--border-radius);
     display: inline-block;
@@ -304,7 +305,7 @@ h3 {
     width: 50%;
     margin: auto;
     text-align: center;
-    font-size: 120%;
+    font-size: 140%;
 }
 
 #projects a {
@@ -575,8 +576,8 @@ footer {
 /* mouse trailer  */
 
 #trailer {
-    height: 12px;
-    width: 12px;
+    height: 6px;
+    width: 6px;
     background-color: var(--color-tertiary);
     border-radius: 20px;
     position: fixed;
