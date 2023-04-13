@@ -603,7 +603,7 @@ body:hover > #trailer{
 
 .card-project {
     background: var(--color-primary);
-    margin: 16px;
+    margin: 32px 16px;
     width: 320px;
     height: 216px;
     border: var(--color-secondary) solid 2px !important;
