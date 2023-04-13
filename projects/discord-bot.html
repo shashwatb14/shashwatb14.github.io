@@ -15,7 +15,7 @@
         <!-- Swiper -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 
-        <title>Projects | Block World</title>
+        <title>Projects | Discord Bot</title>
     </head>
     <body>
         <!-- Mouse trailer by Hyperplexed -->
@@ -45,107 +45,38 @@
             <h1 data-value="projects">projects</h1>
             <div class="line"></div>
 
-            <p><a data-value="Projects" class="interactable" href="../projects.html">Projects</a><a data-value=" / Block World"> / Block World</a></p>
+            <p><a data-value="Projects" class="interactable" href="../projects.html">Projects</a><a data-value=" / Discord Bot"> / Discord Bot</a></p>
 
-            <h3 id="block-world">Block World</h3>
+            <h3 id="discord-bot">Discord Bot (N - 1)</h3>
             <p>
-                I undertook this project because I just wanted to build something fun.
-                (or perhaps something that would interest my friends and make me look cool 😎)
-                So, I started following incredible
-                <a data-value="tutorials" class="interactable" href="https://www.youtube.com/watch?v=vX4l-qozib8&list=PLmP1LNMzp97pQe1FiGpdOLKeWYfTMZM7n" target="_blank">tutorials</a>
-                 by the <a data-value="RedHenDev" class="interactable" href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg" target="_blank">RedHenDev</a>.
-                 However, I was just coding along with him,
-                and not understanding the tiny specific details of every line of code. I did get the gist of the ideas that he implemented,
-                however, I was slightly disheartened as I wasn't able to completely understand everything. Nevertheless,
-                it was quite fun and satisfying to see the program work. Some particular features of this Minecraft ripoff included:
+                After creating several applications in Python, I got curious about the nature of discord bots, as they were somewhat similar to virtual assistants. 
+                Consequently, I decided to make a bot after I discovered that Python could be used to implement one. 
+                I realized that there were a lot of scopes when developing discord bots, and they're usually focused on a specific category. 
+                However, there were some well-known multi-purpose bots as well, ranging from an economic system to moderator commands 
+                which is what I aspired to create. In the end, I created a simple discord bot (<a data-value="add to your server" class="interactable" href="https://discord.com/oauth2/authorize?client_id=859780451127525386&permissions=8&scope=bot" target="_blank">add to your server</a>) 
+                and named it N - 1, believing that I was capable of creating better and updated versions of the bot. 
+                It consists of some of the commands with the command prefix being a semi-colon (;):
                 <ul>
-                    <li>Perlin noise for terrain generation using the
-                        <a data-value="perlin-noise" class="interactable" href="https://pypi.org/project/perlin-noise/" target="_blank">perlin-noise</a> library</li>
-                    <li>Improved gravity system to make the game efficient</li>
-                    <li>Effective terrain generation with a unique swirling technique (infinite)</li>
-                    <li>The capability of building with different materials and mining only built materials</li>
-                    <li>Self-made mods</li>
+                    <li><u>balance</u>: displays the balance of the specified user</li>
+                    <li><u>ban</u>: bans specified user (moderator only)</li>
+                    <li><u>unban</u>: unbans specified user (moderator only)</li>
+                    <li><u>clear</u>: clears specified number of messages (owner only)</li>
+                    <li><u>code</u>: displays random snippets of Python code</li>
+                    <li><u>deposit</u>: deposits cash from wallet to bank</li>
+                    <li><u>eight_ball</u>: simulates magic 8 ball</li>
+                    <li><u>emojify</u>: emojifies text</li>
+                    <li><u>kick</u>: kicks specified user (moderator only)</li>
+                    <li><u>meme</u>: displays daily-updated memes</li>
+                    <li><u>stats</u>: displays stats of specified user (level, experience, progress)</li>
+                    <li><u>ping</u>: displays the bot's ping</li>
+                    <li><u>rob</u>: rob specified user's bank</li>
+                    <li><u>send</u>: send the specified user a specified amount of cash</li>
+                    <li><u>withdraw</u>: withdraw a specified amount of cash from the bank</li>
                 </ul>
             </p>
-            <p>
-                Some images of the final product are shown below:
-                <br>
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../images/block_world_v1_1.png"></div>
-                        <div class="swiper-slide"><img src="../images/block_world_v1_2.png"></div>
-                        <div class="swiper-slide"><img src="../images/block_world_v1_3.png"></div>
-                    </div>
-                    <div class="swiper-button-next nav-btn interactable"></div>
-                    <div class="swiper-button-prev nav-btn interactable"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </p>
-            <p>
-                The following images show the unfinished product but with more features - the textures change as the altitude changes:
-                <br>
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../images/block_world_v1_4.png"></div>
-                        <div class="swiper-slide"><img src="../images/block_world_v1_5.png"></div>
-                        <div class="swiper-slide"><img src="../images/block_world_v1_6.png"></div>
-                    </div>
-                    <div class="swiper-button-next nav-btn interactable"></div>
-                    <div class="swiper-button-prev nav-btn interactable"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </p>
-            <p>
-                However, I recently decided to start again and work on a second version, again following the
-                <a data-value="RedHenDev" class="interactable" href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg" target="_blank">RedHenDev</a> with his new
-                <a data-value="tutorials series" class="interactable" href="https://www.youtube.com/watch?v=fofR4yzTCdA&list=PLmP1LNMzp97rIbwnGHhjjobHHqWekxy8Y" target="_blank">tutorials series</a>.
-                With the previous version abandoned, I decided on focusing on adding features that I wasn't able to in the previous version.
-                So far, many of them are similar, but a few unique ones include:
-                <ul>
-                    <li>Mining into the terrain (infinitely)</li>
-                    <li>Similar terrain generation techniques however with some minor improvements to enhance gameplay</li>
-                    <li>Step sounds that change as the terrain changes (from normal terrain to snow in higher terrains)</li>
-                    <li>Falling snowflakes that follow the player around</li>
-                </ul>
-            </p>
-            <p>
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../images/block_world_v2_1.png"></div>
-                        <div class="swiper-slide"><img src="../images/block_world_v2_2.png"></div>
-                        <div class="swiper-slide"><img src="../images/block_world_v2_3.png"></div>
-                    </div>
-                    <div class="swiper-button-next nav-btn interactable"></div>
-                    <div class="swiper-button-prev nav-btn interactable"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-                <!-- Swiper JS -->
-                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-                <!-- Initialize Swiper -->
-                <script>
-                    var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: 1,
-                    loop: true,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    });
-                </script>
-            </p>
-            <p>
-                An important feature of the second version and my key takeaway was the use of multiple modules
-                that all ultimately mingled and worked together to make the game work! It opened my mind up to this way of programming.
-                I quickly realized the benefits of stepwise refinement and maintaining organized files.
+            <p>Apart from these various commands, the bot consists of other fun commands and most of its replies are in the form of embeds. 
+                Overall, it was a great learning experience for me and I had more aspirations such as music controls that 
+                I wasn't able to pursue but aspire to incorporate in potential future versions of the bot.
             </p>
             <br>
         </div>
