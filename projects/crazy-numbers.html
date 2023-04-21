@@ -49,7 +49,46 @@
 
             <h3 id="crazy-numbers">Crazy numbers</h3>
             <p>
-                I created this game whilst I was creating the virtual assistant.
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_1.png" alt="Crazy Numbers" style="height: 300px"></div>
+                        <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_2.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_3.png" alt="Crazy Numbers" style="height: 300px"></div>
+                        <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_4.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_5.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_6.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_7.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_8.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_9.png" alt="Crazy Numbers"></div>
+                    </div>
+                    <div class="swiper-button-next nav-btn interactable"></div>
+                    <div class="swiper-button-prev nav-btn interactable"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 2,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+                </script>
+            </p>
+            <p>
+                I created this game whilst I was creating the virtual assistant 
+                (<a data-value="GitHub Repository" class="interactable" href="https://github.com/shash-b/crazy_numbers" target="_blank">GitHub Repository</a>).
                 I intended to create something entertaining but also educative and helpful in some sense.
                 The first thing that came to my mind was making a game with the genre of mathematical thinking.
                 The gist of the game is that there are 5 possible options:

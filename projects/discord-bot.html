@@ -75,6 +75,43 @@
                     <li><u>withdraw</u>: withdraw a specified amount of cash from the bank</li>
                 </ul>
             </p>
+            <p>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide discord-bot-imgs"><img src="../images/discord_bot_1.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide discord-bot-imgs"><img src="../images/discord_bot_2.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide discord-bot-imgs"><img src="../images/discord_bot_3.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide discord-bot-imgs"><img src="../images/discord_bot_4.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide discord-bot-imgs"><img src="../images/discord_bot_5.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide discord-bot-imgs"><img src="../images/discord_bot_6.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide discord-bot-imgs"><img src="../images/discord_bot_7.png" alt="Crazy Numbers"></div>
+                        <div class="swiper-slide discord-bot-imgs"><img src="../images/discord_bot_8.png" alt="Crazy Numbers"></div>
+                    </div>
+                    <div class="swiper-button-next nav-btn interactable"></div>
+                    <div class="swiper-button-prev nav-btn interactable"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+                </script>
+            </p>
             <p>Apart from these various commands, the bot consists of other fun commands and most of its replies are in the form of embeds. 
                 Overall, it was a great learning experience for me and I had more aspirations such as music controls that 
                 I wasn't able to pursue but aspire to incorporate in potential future versions of the bot.

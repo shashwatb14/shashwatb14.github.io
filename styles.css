@@ -399,7 +399,8 @@ img {
 }
 
 .swiper {
-    width: 80%
+    width: 80%;
+    text-align: center;
 }
 
 .nav-btn {
@@ -612,12 +613,17 @@ body:hover > #trailer{
     background: var(--color-primary);
     margin: 32px 16px;
     width: 320px;
-    height: 220px;
+    height: 420px;
     border: var(--color-secondary) solid 2px !important;
     border-radius: var(--border-radius);
     padding: 12px;
-    box-shadow: 14px 14px rgba(0, 0, 0, 0.4);
+    box-shadow: 14px 14px rgba(0, 0, 0, 0.8);
     position: relative;
+    transition: all 0.2s ease;
+}
+
+.card-project:hover {
+    box-shadow: 0 0 rgba(0, 0, 0, 0);
 }
 
 .card-project a {
@@ -632,6 +638,26 @@ body:hover > #trailer{
 .card-project h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
+}
+
+.card-project .image {
+    border: 2px solid var(--color-primary-light);
+    border-radius: var(--border-radius);
+    margin-bottom: 14px;
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover ;
+    transition: all 1s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.04);
 }
 
 .card-project .rule {
@@ -677,6 +703,7 @@ body:hover > #trailer{
   'opsz' 24;
 
   float: right;
+  padding-top: 4px  ;
 }
 
 #time-info {
@@ -692,4 +719,16 @@ body:hover > #trailer{
 
 .swiper-slide img {
     border-radius: var(--border-radius);
+}
+
+.crazy-numbers-imgs img {
+    height: 400px;
+    width: auto;
+    border: 2px solid var(--color-tertiary);
+}
+
+.discord-bot-imgs img {
+    height: 500px;
+    width: auto;
+    margin: auto;
 }
