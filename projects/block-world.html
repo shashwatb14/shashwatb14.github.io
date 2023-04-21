@@ -49,6 +49,46 @@
 
             <h3 id="block-world">Block World</h3>
             <p>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../images/block_world_ghast_1.png" alt="Floating ghast"></div>
+                        <div class="swiper-slide"><img src="../images/block_world_ghast_2.png" alt="Floating ghast"></div>
+                        <div class="swiper-slide"><img src="../images/block_world_snow_1.png" alt="Snowy terrain"></div>
+                        <div class="swiper-slide"><img src="../images/block_world_snow_2.png" alt="Snowy terrain"></div>
+                        <div class="swiper-slide"><img src="../images/block_world_terrain_gen_1.png" alt="Terrain generation"></div>
+                        <div class="swiper-slide"><img src="../images/block_world_terrain_gen_2.png" alt="Terrain generation"></div>
+                        <div class="swiper-slide"><img src="../images/block_world_terrain_gen_3.png" alt="Terrain generation"></div>
+                        <div class="swiper-slide"><img src="../images/block_world_terrain_gen_4.png" alt="Terrain generation"></div>
+                        <div class="swiper-slide"><img src="../images/block_world_tower.png" alt="Tall tower"></div>
+
+
+                    </div>
+                    <div class="swiper-button-next nav-btn interactable"></div>
+                    <div class="swiper-button-prev nav-btn interactable"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 2,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+                </script>
+            </p>
+            <p>
                 I undertook this project because I just wanted to build something fun.
                 (or perhaps something that would interest my friends and make me look cool 😎)
                 So, I started following incredible

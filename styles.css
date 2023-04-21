@@ -399,7 +399,7 @@ img {
 }
 
 .swiper {
-    width: 80%;
+    width: 90%;
     text-align: center;
 }
 
@@ -731,4 +731,5 @@ body:hover > #trailer{
     height: 500px;
     width: auto;
     margin: auto;
+    border: 2px solid var(--color-secondary);
 }
