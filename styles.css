@@ -612,7 +612,7 @@ body:hover > #trailer{
 .card-project {
     background: var(--color-primary);
     margin: 32px 16px;
-    width: 320px;
+    width: 26%;
     height: 420px;
     border: var(--color-secondary) solid 2px !important;
     border-radius: var(--border-radius);
@@ -674,8 +674,8 @@ body:hover > #trailer{
 
 .card-footer {
     margin-top: 8px;
-    margin-left: -14px !important;
-    width: 320px;
+    margin-left: -12px !important;
+    width: 100%;
     position: absolute;
     bottom: 0;
 }
