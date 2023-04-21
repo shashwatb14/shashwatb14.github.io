@@ -610,6 +610,7 @@ body:hover > #trailer{
     border: var(--color-secondary) solid 2px !important;
     border-radius: var(--border-radius);
     padding: 12px;
+    box-shadow: 14px 14px rgba(0, 0, 0, 0.4);
 }
 
 .card-project a {
