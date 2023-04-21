@@ -63,6 +63,40 @@
                 </ul>
             </p>
             <p>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../images/web_homepage.png"></div>
+                        <div class="swiper-slide"><img src="../images/web_past_events.png"></div>
+                        <div class="swiper-slide"><img src="../images/web_ongoing_events.png"></div>
+                        <div class="swiper-slide"><img src="../images/web_countdown.png"></div>
+                        <div class="swiper-slide"><img src="../images/web_login.png"></div>
+                    </div>
+                    <div class="swiper-button-next nav-btn interactable"></div>
+                    <div class="swiper-button-prev nav-btn interactable"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+                </script>
+            </p>
+            <p>
                 I uploaded the website to the school server, however for some reason the login page doesn't work and some characters
                 don't appear the way they're supposed, despite working perfectly fine when I run the website locally. 
                 Nevertheless, I got a perfect score for the assignment! I've come quite far since then and have learned a lot of aspects of web development.
