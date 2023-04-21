@@ -248,6 +248,10 @@ button:hover {
         margin-top: -32px;
         margin-bottom: 64px;
     }
+
+    .card-project {
+        width: 42% !important;
+    }
 }
 
 .home-content:hover {
@@ -478,7 +482,22 @@ img {
     }
 
     .card-project {
-        margin: 32px 0px;
+        margin: 32px 0px !important;
+        width: 100% !important;
+        height: 440px !important;
+    }
+
+    .discord-bot-imgs img, .crazy-numbers-imgs img {
+        height: auto !important;
+        border: none !important;
+    }
+
+    .discord-bot-imgs img {
+        width: 100% !important;
+    }
+
+    .crazy-numbers-imgs img {
+        width: 98% !important;
     }
 }
 
