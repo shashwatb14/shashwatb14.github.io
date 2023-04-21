@@ -613,12 +613,11 @@ body:hover > #trailer{
     background: var(--color-primary);
     margin: 32px 16px;
     width: 320px;
-    height: 420px;
+    height: 416px;
     border: var(--color-secondary) solid 2px !important;
     border-radius: var(--border-radius);
     padding: 12px;
     box-shadow: 14px 14px rgba(0, 0, 0, 0.8);
-    position: relative;
     transition: all 0.2s ease;
 }
 
@@ -676,13 +675,10 @@ body:hover > #trailer{
     margin-top: 8px;
     margin-left: -14px !important;
     width: 320px;
-    position: absolute;
-    bottom: 0;
 }
 
 .tags {
     display: inline-block;
-    margin-bottom: 8px;
 }
 
 .tag {
