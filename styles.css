@@ -475,6 +475,10 @@ img {
         background-color: transparent !important;
         border: none !important;
     }
+
+    .card-project {
+        margin: 32px 0px;
+    }
 }
 
 footer {
@@ -606,7 +610,7 @@ body:hover > #trailer{
 
 .card-project {
     background: var(--color-primary);
-    margin: 32px 8px;
+    margin: 32px 16px;
     width: 320px;
     height: 216px;
     border: var(--color-secondary) solid 2px !important;
