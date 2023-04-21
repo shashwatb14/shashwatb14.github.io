@@ -600,11 +600,13 @@ body:hover > #trailer{
     display: inline-flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 108%;
+    margin-left: -4%;
 }
 
 .card-project {
     background: var(--color-primary);
-    margin: 32px 16px;
+    margin: 32px 8px;
     width: 320px;
     height: 216px;
     border: var(--color-secondary) solid 2px !important;
