@@ -679,3 +679,7 @@ body:hover > #trailer{
     margin: auto;
     margin-bottom: 12px;
 }
+
+.swiper-slide img {
+    border-radius: var(--border-radius);
+}
