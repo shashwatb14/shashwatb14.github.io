@@ -446,6 +446,7 @@ img {
         visibility: visible;
     }
 
+    /* header cont. */
     header nav {
         display: none;
     }
@@ -453,6 +454,7 @@ img {
     #hamburger-icon {
         display: block;
     }
+    /* header end */
 
     .refs {
         width: 100% !important;
