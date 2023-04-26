@@ -437,6 +437,13 @@ img {
     background-color: var(--color-quaternary) !important;
 }
 
+@media screen and (max-width: 1000px) {
+    #main-text #projects {
+        margin-top: 6% !important;
+        margin-bottom: 6%;
+    }
+}
+
 @media screen and (max-width: 660px) {
     .nav-btn {
         visibility: hidden;
@@ -516,6 +523,11 @@ img {
 
     #main-text {
         width: 100% !important;
+    }
+
+    #main-text #projects {
+        margin-top: 10% !important;
+        margin-bottom: 12% !important;
     }
 }
 
@@ -809,11 +821,4 @@ body:hover > #trailer{
 
 #home {
     display: flex;
-}
-
-@media screen and (max-width: 1000px) {
-    #main-text #projects {
-        margin-top: 6% !important;
-        margin-bottom: 6%;
-    }
 }
