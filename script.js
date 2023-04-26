@@ -34,24 +34,29 @@ window.onload = function() {
         });
     }
 
-    document.querySelector("h1").onmouseover = event => {
-        let iterations = 0;
+    var heading = document.querySelector("h1");
 
-        const interval = setInterval(() => {
-            event.target.innerText = event.target.innerText.split("")
-            .map((letter, index) => {
-                if (index < iterations) {
-                    return event.target.dataset.value[index];
-                }
+    if(heading) {
 
-                return letters[Math.floor(Math.random() * 52)]
-            })
-            .join("");
+        heading.onmouseover = event => {
+            let iterations = 0;
 
-        if (iterations >= event.target.dataset.value.length) clearInterval(interval);
+            const interval = setInterval(() => {
+                event.target.innerText = event.target.innerText.split("")
+                .map((letter, index) => {
+                    if (index < iterations) {
+                        return event.target.dataset.value[index];
+                    }
 
-        iterations += 1 / 2;
-        }, 40);
+                    return letters[Math.floor(Math.random() * 52)]
+                })
+                .join("");
+
+            if (iterations >= event.target.dataset.value.length) clearInterval(interval);
+
+            iterations += 1 / 2;
+            }, 40);
+        }
     }
 
     const trailer = document.getElementById("trailer");

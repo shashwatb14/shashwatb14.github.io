@@ -306,7 +306,7 @@ h3 {
 .main #projects {
     font-family: 'Cutive Mono', monospace !important;
     margin-top: 88px !important;
-    width: 50%;
+    width: 100%;
     margin: auto;
     text-align: center;
     font-size: 140%;
