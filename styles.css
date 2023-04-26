@@ -501,6 +501,22 @@ img {
     .crazy-numbers-imgs img {
         width: 98% !important;
     }
+
+    #home {
+        display: block !important;
+    }
+
+    #main-image img {
+        margin-bottom: 40px;
+    }
+
+    .typing-container {
+        font-size: 1.4rem !important;
+    }
+
+    #main-text {
+        width: 100% !important;
+    }
 }
 
 footer {
@@ -753,4 +769,52 @@ body:hover > #trailer{
     width: auto;
     margin: auto;
     border: 2px solid var(--color-secondary);
+}
+
+.typing-container {
+    padding-left: 10%;
+    padding-top: 10%;
+    font-size: 2rem;
+}
+
+#main-text {
+    width: 80%;
+    top: 50% !important;
+}
+
+#main-text .typing-container, #main-text #projects {
+    display: block !important;
+}
+
+#main-image img {
+    margin-top: -4px;
+    height: calc(100vh - (60px + 176px + 40px));
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: 16px 16px var(--color-primary);
+    border: 2px var(--color-secondary) solid;
+}
+
+.auto-type {
+    color: var(--color-secondary);
+    text-shadow:
+        0 0 8px var(--color-secondary);
+}
+
+#main-text #projects {
+    text-align: left;
+    padding-left: 10%;
+    margin-top: 10%;
+}
+
+#home {
+    display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+    #main-text #projects {
+        margin-top: 6% !important;
+        margin-bottom: 6%;
+    }
+
 }

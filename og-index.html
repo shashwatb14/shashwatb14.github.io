@@ -38,19 +38,39 @@
                 </ul>
             </div>
         </header>
-        <div class="main" id="home">
-            <div id="main-text">    
-                <div class="typing-container">
-                    <p>Heya! I'm Shashwat.</p>
-                    <p>I am <span class="auto-type"></span></p>
+        <div class="main">
+            <h1 data-value="i am">i am</h1>
+            <div class="line"></div>
+            <br class="user-select-none">
+            <p>
+                <div id="descriptors">
+                    <div class="home-content">
+                        <div class="float">
+                            <b>an academic high school student.</b>
+                        </div>
+                    </div>
+                    <div class="home-content">
+                        <div class="float">
+                            <b>passionate and determined.</b>
+                        </div>
+                    </div>
+                    <div class="home-content">
+                        <div class="float">
+                            <b>an aspiring computer scientist.</b>
+                        </div>
+                    </div>
+                    <div class="home-content">
+                        <div class="float">
+                            <b>a drummer and a resilient runner.</b>
+                        </div>
+                    </div>
                 </div>
-                <div id="projects">
-                    <a data-value="&#60;my-projects&#62;" class="interactable" href="projects.html">&#60;<b>my-projects</b>&#62;</a>
-                </div>
+            </p>
+            <div id="projects">
+                <a data-value="&#60;my-projects&#62;" class="interactable" href="projects.html">&#60;<b>my-projects</b>&#62;</a>
             </div>
-            <div id="main-image">
-                <img src="images/main.jpg">
-            </div>
+            <br class="user-select-none">
+            <br class="user-select-none">
         </div>
         <footer class="text-center">
             Reach me:
@@ -88,23 +108,5 @@
             </div>
             <p>Built by Shashwat Bhandari</p>
         </footer>
-
-        <!-- Typed.js -->
-        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
-        <script>
-            var typed = new Typed('.auto-type', {
-                strings: [
-                    'an academic high school student.',
-                    'passionate and determined.',
-                    'an aspiring computer scientist.',
-                    'a drummer and a runner.',
-                ],
-                typeSpeed: 30,
-                backSpeed: 15,
-                backDelay: 1200,
-                loop: true
-            });
-        </script>
     </body>
 </html>
