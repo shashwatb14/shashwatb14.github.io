@@ -326,7 +326,7 @@ h3 {
     background: var(--color-secondary);
     color: var(--color-primary) !important;
     transform: scale(1.1);
-    box-shadow: rgba(0, 128, 128, 0.4) -10px 10px, rgba(0, 128, 128, 0.3) -20px 20px, rgba(0, 128, 128, 0.2) -30px 30px, rgba(0, 128, 128, 0.1) -40px 40px, rgba(0, 128, 128, 0.05) -50px 50px;
+    box-shadow: rgba(0, 128, 128, 0.4) -10px 10px, rgba(0, 128, 128, 0.3) -20px 20px, rgba(0, 128, 128, 0.2) -30px 30px, rgba(0, 128, 128, 0.1) -40px 40px;
 }
 
 .main a {
