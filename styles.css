@@ -121,6 +121,7 @@ header ul a:hover {
 #current {
     font-size: 140%;
     color: var(--color-secondary) !important;
+    text-shadow: 0 0 12px var(--color-secondary);
 }
 
 #hamburger-icon {
@@ -331,6 +332,7 @@ h3 {
 
 .main a {
     color: var(--color-secondary) !important;
+    text-shadow: 0 0 4px var(--color-secondary);
     text-decoration: underline;
     text-decoration-color: rgba(0, 128, 128, 0);
 
@@ -689,13 +691,18 @@ body:hover > #trailer{
     background: var(--color-primary);
     margin: 32px 16px;
     width: 26%;
-    height: 420px;
+    height: 428px;
     border: var(--color-secondary) solid 2px !important;
     border-radius: var(--border-radius);
     padding: 12px;
     box-shadow: 14px 14px rgba(0, 0, 0, 0.8);
     position: relative;
     transition: all 0.2s ease;
+    font-size: 1rem;
+}
+
+.bigger-card {
+    height: 469px;
 }
 
 .card-project:hover {
@@ -758,17 +765,28 @@ body:hover > #trailer{
 
 .tags {
     display: inline-block;
+    width: 89%;
     margin-bottom: 8px;
+}
+
+.arrow {
+    width: 9%;
+    display: inline-flex;
+}
+
+.arrow .material-symbols-outlined {
+    margin-bottom: -10px;
 }
 
 .tag {
     background-color: var(--color-primary-light);
+    text-shadow: 0 0 4px var(--color-secondary);
     padding: 4px;
     border-radius: var(--border-radius);
     color: var(--color-secondary);
     font-size: 90%;
     display: inline-block;
-    margin-right: 4px;
+    margin: 6px 2px;
 }
 
 .material-symbols-outlined {
@@ -779,7 +797,8 @@ body:hover > #trailer{
   'opsz' 24;
 
   float: right;
-  padding-top: 4px  ;
+  margin-top: 10px;
+
 }
 
 #time-info {
@@ -854,8 +873,7 @@ body:hover > #trailer{
     height: calc(100vh - (60px + 176px + 40px));
     object-fit: cover;
     border-radius: var(--border-radius);
-    box-shadow: 16px 16px var(--color-primary);
-    border: 2px var(--color-secondary) solid;
+    box-shadow: 0 0 16px 2px var(--color-secondary), 16px 16px var(--color-primary);
 }
 
 .auto-type {
@@ -872,4 +890,8 @@ body:hover > #trailer{
 
 #home {
     display: flex;
+}
+
+.card-footer a {
+    text-shadow: none;
 }
