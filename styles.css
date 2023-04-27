@@ -529,6 +529,11 @@ img {
         margin-top: 10% !important;
         margin-bottom: 12% !important;
     }
+
+    #crazy-nums-swiper-wrapper {
+        display: flex;
+        align-items: center;
+    }
 }
 
 footer {

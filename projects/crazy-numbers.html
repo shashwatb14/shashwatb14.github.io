@@ -35,9 +35,9 @@
                 <div id="bar2"></div>
                 <div id="bar3"></div>
                 <ul id="mobile-menu">
-                    <li><a data-value="&#60;home&#62;" href="index.html">&#60;<b>home</b>&#62;</a></li>
-                    <li><a data-value="&#60;projects&#62;" href="projects.html">&#60;<b>projects</b>&#62;</a></li>
-                    <li><a data-value="&#60;about&#62;" href="about.html">&#60;<b>about</b>&#62;</a></li>
+                    <li><a data-value="&#60;home&#62;" href="../index.html">&#60;<b>home</b>&#62;</a></li>
+                    <li><a data-value="&#60;projects&#62;" href="../projects.html">&#60;<b>projects</b>&#62;</a></li>
+                    <li><a data-value="&#60;about&#62;" href="../about.html">&#60;<b>about</b>&#62;</a></li>
                 </ul>
             </div>
         </header>
@@ -51,7 +51,7 @@
             <p>
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper" id="crazy-nums-swiper-wrapper">
                         <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_1.png" alt="Crazy numbers" style="height: 300px"></div>
                         <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_2.png" alt="Crazy numbers"></div>
                         <div class="swiper-slide crazy-numbers-imgs"><img src="../images/crazy_numbers_3.png" alt="Crazy numbers" style="height: 300px"></div>
@@ -73,16 +73,21 @@
                 <!-- Initialize Swiper -->
                 <script>
                     var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: 2,
-                    loop: true,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
+                        slidesPerView: 1,
+                        loop: true,
+                        breakpoints: {
+                            660: {
+                                slidesPerView: 2,
+                            }
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
                     });
                 </script>
             </p>
