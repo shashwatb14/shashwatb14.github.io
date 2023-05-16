@@ -677,13 +677,12 @@ body:hover > #trailer{
     display: inline-flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 108%;
-    margin-left: -4%;
+    width: 100%;
 }
 
 .card-project {
     background: var(--color-primary);
-    margin: 32px 16px;
+    margin: 4% 3%;
     width: 26%;
     height: 428px;
     border: var(--color-secondary) solid 2px !important;
@@ -863,8 +862,8 @@ body:hover > #trailer{
 }
 
 #main-image img {
-    margin-top: -4px;
-    height: calc(100vh - (60px + 176px + 40px));
+    margin-top: 4px;
+    height: calc(100vh - (60px + 176px + 40px) - 20px);
     object-fit: cover;
     border-radius: var(--border-radius);
     box-shadow: 0 0 16px 2px var(--color-secondary), 16px 16px var(--color-primary);
