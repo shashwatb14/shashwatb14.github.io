@@ -247,6 +247,11 @@ button:hover {
     .card-project {
         width: 42% !important;
     }
+
+    #main-text #projects {
+        margin-top: 6% !important;
+        margin-bottom: 6%;
+    }
 }
 
 .home-content:hover {
@@ -433,14 +438,7 @@ img {
     background-color: var(--color-quaternary) !important;
 }
 
-@media screen and (max-width: 1000px) {
-    #main-text #projects {
-        margin-top: 6% !important;
-        margin-bottom: 6%;
-    }
-}
-
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 700px) {
     .nav-btn {
         visibility: hidden;
     }
@@ -780,6 +778,11 @@ body:hover > #trailer{
     font-size: 90%;
     display: inline-block;
     margin: 6px 2px;
+}
+
+.special {
+    color: var(--color-quaternary);
+    text-shadow: 0 0 4px var(--color-quaternary);
 }
 
 .material-symbols-outlined {
