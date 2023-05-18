@@ -236,7 +236,7 @@ button:hover {
     display: inline-block;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1060px) {
     .home-content {
         display: block;
         margin: auto;
