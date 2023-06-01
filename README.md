@@ -1,6 +1,6 @@
-# shash-b.github.io
+# shashwatb14.github.io
 
-[Link to Github Pages](https://shash-b.github.io)
+[Link to Github Pages](https://shashwatb14.github.io)
 
 ---
 
