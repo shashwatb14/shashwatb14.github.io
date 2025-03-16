@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 html {
@@ -14,7 +14,7 @@ body {
   --color-quaternary: #008080;
   --border-radius: 8px;
 
-  font-family: "Cutive Mono", monospace !important;
+  font-family: "Roboto Mono", monospace !important;
   background-color: var(--color-primary-light) !important;
   color: var(--color-tertiary) !important;
   margin: 0;
@@ -25,9 +25,8 @@ body {
 }
 
 a {
-  font-family: "Cutive Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 116%;
-  font-weight: bolder;
   transition: all 0.2s ease;
   text-decoration: none;
   color: var(--color-tertiary);
@@ -291,8 +290,7 @@ h1 {
   font-size: 280% !important;
   border-radius: var(--border-radius);
   border: 2px solid var(--color-secondary);
-  font-family: "Cutive Mono", monospace;
-  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
 }
 
 h1:hover {
@@ -313,7 +311,7 @@ h3 {
 }
 
 .main #projects {
-  font-family: "Cutive Mono", monospace !important;
+  font-family: "Roboto Mono", monospace !important;
   margin-top: 69px !important;
   width: 100%;
   margin: auto;

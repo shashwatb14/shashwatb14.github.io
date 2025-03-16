@@ -1,229 +1,481 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <link href="../styles.css" rel="stylesheet">
-        <link rel="icon" href="../images/favicon.ico">
-        <script src="../script.js"></script>
+  <head>
+    <link href="../styles.css" rel="stylesheet" />
+    <link rel="icon" href="../images/favicon.ico" />
+    <script src="../script.js"></script>
 
-        <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <title>Projects | Block World</title>
+  </head>
+  <body>
+    <!-- Mouse trailer by Hyperplexed -->
+    <div id="trailer"></div>
+    <!-- Navigation Bar by Adam from JavaScript Academy https://www.youtube.com/watch?v=OjQP7rPwJyE -->
+    <header>
+      <div id="name">
+        <a data-value="Shashwat" class="interactable" href="../index.html"
+          >Shashwat</a
+        >
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a
+              data-value="&#60;home&#62;"
+              class="interactable"
+              href="../index.html"
+              >&#60;home&#62;</a
+            >
+          </li>
+          <li>
+            <a
+              data-value="&#60;projects&#62;"
+              class="interactable"
+              id="current"
+              href="../projects.html"
+              >&#60;projects&#62;</a
+            >
+          </li>
+          <!-- <li>
+                    <a
+                      data-value="&#60;about&#62;"
+                      class="interactable"
+                      href="../about.html"
+                      >&#60;about&#62;</a
+                    >
+                  </li> -->
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div id="bar1"></div>
+        <div id="bar2"></div>
+        <div id="bar3"></div>
+        <ul id="mobile-menu">
+          <li>
+            <a data-value="&#60;home&#62;" href="../index.html"
+              >&#60;home&#62;</a
+            >
+          </li>
+          <li>
+            <a data-value="&#60;projects&#62;" href="../projects.html"
+              >&#60;projects&#62;</a
+            >
+          </li>
+          <!-- <li>
+                    <a data-value="&#60;about&#62;" href="../about.html"
+                      >&#60;about&#62;</a
+                    >
+                  </li> -->
+        </ul>
+      </div>
+    </header>
+    <div class="main">
+      <h1 data-value="projects">projects</h1>
+      <div class="line"></div>
+
+      <p>
+        <a data-value="Projects" class="interactable" href="../projects.html"
+          >Projects</a
+        ><a data-value=" / Block World"> / Block World</a>
+      </p>
+
+      <h3 id="block-world">Block World</h3>
+      <p>
         <!-- Swiper -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+      </p>
 
-        <title>Projects | Block World</title>
-    </head>
-    <body>
-        <!-- Mouse trailer by Hyperplexed -->
-        <div id="trailer"></div>
-        <!-- Navigation Bar by Adam from JavaScript Academy https://www.youtube.com/watch?v=OjQP7rPwJyE -->
-        <header>
-            <div id="name"><a data-value="Shashwat" class="interactable" href="../index.html">Shashwat</a></div>
-            <nav>
-                <ul>
-                    <li><a data-value="&#60;home&#62;" class="interactable" href="../index.html">&#60;<b>home</b>&#62;</a></li>
-                    <li><a data-value="&#60;projects&#62;" class="interactable"  href="../projects.html">&#60;<b>projects</b>&#62;</a></li>
-                    <li><a data-value="&#60;about&#62;" class="interactable" href="../about.html">&#60;<b>about</b>&#62;</a></li>
-                </ul>
-            </nav>
-            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-                <div id="bar1"></div>
-                <div id="bar2"></div>
-                <div id="bar3"></div>
-                <ul id="mobile-menu">
-                    <li><a data-value="&#60;home&#62;" href="../index.html">&#60;<b>home</b>&#62;</a></li>
-                    <li><a data-value="&#60;projects&#62;" href="../projects.html">&#60;<b>projects</b>&#62;</a></li>
-                    <li><a data-value="&#60;about&#62;" href="../about.html">&#60;<b>about</b>&#62;</a></li>
-                </ul>
-            </div>
-        </header>
-        <div class="main">
-            <h1 data-value="projects">projects</h1>
-            <div class="line"></div>
-
-            <p><a data-value="Projects" class="interactable" href="../projects.html">Projects</a><a data-value=" / Block World"> / Block World</a></p>
-
-            <h3 id="block-world">Block World</h3>
-            <p>
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_ghast_1.png" alt="Floating ghast"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_ghast_2.png" alt="Floating ghast"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_snow_1.png" alt="Snowy terrain"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_snow_2.png" alt="Snowy terrain"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_terrain_gen_1.png" alt="Terrain generation"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_terrain_gen_2.png" alt="Terrain generation"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_terrain_gen_3.png" alt="Terrain generation"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_terrain_gen_4.png" alt="Terrain generation"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_tower.png" alt="Tall tower"></div>
-
-
-                    </div>
-                    <div class="swiper-button-next nav-btn interactable"></div>
-                    <div class="swiper-button-prev nav-btn interactable"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-                <!-- Swiper JS -->
-                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-                <!-- Initialize Swiper -->
-                <script>
-                    var swiper = new Swiper(".mySwiper", {
-                        slidesPerView: 2,
-                        loop: true,
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true,
-                        },
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
-                    });
-                </script>
-            </p>
-            <p>
-                I undertook this project because I just wanted to build something fun.
-                (or perhaps something that would interest my friends and make me look cool 😎)
-                So, I started following incredible
-                <a data-value="tutorials" class="interactable" href="https://www.youtube.com/watch?v=vX4l-qozib8&list=PLmP1LNMzp97pQe1FiGpdOLKeWYfTMZM7n" target="_blank">tutorials</a>
-                 by the <a data-value="RedHenDev" class="interactable" href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg" target="_blank">RedHenDev</a>.
-                 However, I was just coding along with him,
-                and not understanding the tiny specific details of every line of code. I did get the gist of the ideas that he implemented,
-                however, I was slightly disheartened as I wasn't able to completely understand everything. Nevertheless,
-                it was quite fun and satisfying to see the program work. Some particular features of this Minecraft ripoff included:
-                <ul>
-                    <li>Perlin noise for terrain generation using the
-                        <a data-value="perlin-noise" class="interactable" href="https://pypi.org/project/perlin-noise/" target="_blank">perlin-noise</a> library</li>
-                    <li>Improved gravity system to make the game efficient</li>
-                    <li>Effective terrain generation with a unique swirling technique (infinite)</li>
-                    <li>The capability of building with different materials and mining only built materials</li>
-                    <li>Self-made mods</li>
-                </ul>
-            </p>
-            <p>
-                Some images of the final product are shown below:
-                <br>
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_v1_1.png" alt="Floating ghast"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_v1_2.png" alt="Floating ghast"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_v1_3.png" alt="Build tool"></div>
-                    </div>
-                    <div class="swiper-button-next nav-btn interactable"></div>
-                    <div class="swiper-button-prev nav-btn interactable"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </p>
-            <p>
-                The following images show the unfinished product but with more features - the textures change as the altitude changes:
-                <br>
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_v1_4.png" alt="Terrain change"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_v1_5.png" alt="Floating enderman"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_v1_6.png" alt="Build tool"></div>
-                    </div>
-                    <div class="swiper-button-next nav-btn interactable"></div>
-                    <div class="swiper-button-prev nav-btn interactable"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </p>
-            <p>
-                However, I recently decided to start again and work on a second version, again following the
-                <a data-value="RedHenDev" class="interactable" href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg" target="_blank">RedHenDev</a> with his new
-                <a data-value="tutorials series" class="interactable" href="https://www.youtube.com/watch?v=fofR4yzTCdA&list=PLmP1LNMzp97rIbwnGHhjjobHHqWekxy8Y" target="_blank">tutorials series</a>.
-                With the previous version abandoned, I decided on focusing on adding features that I wasn't able to in the previous version.
-                So far, many of them are similar, but a few unique ones include:
-                <ul>
-                    <li>Mining into the terrain (infinitely)</li>
-                    <li>Similar terrain generation techniques however with some minor improvements to enhance gameplay</li>
-                    <li>Step sounds that change as the terrain changes (from normal terrain to snow in higher terrains)</li>
-                    <li>Falling snowflakes that follow the player around</li>
-                </ul>
-            </p>
-            <p>
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_v2_1.png" alt="Mining"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_v2_2.png" alt="Snowflakes"></div>
-                        <div class="swiper-slide"><img src="../images/block_world/block_world_v2_3.png" alt="Inside hole"></div>
-                    </div>
-                    <div class="swiper-button-next nav-btn interactable"></div>
-                    <div class="swiper-button-prev nav-btn interactable"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-                <!-- Swiper JS -->
-                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-                <!-- Initialize Swiper -->
-                <script>
-                    var swiper = new Swiper(".mySwiper", {
-                        slidesPerView: 1,
-                        loop: true,
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true,
-                        },
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
-                    });
-                </script>
-            </p>
-            <p>
-                An important feature of the second version and my key takeaway was the use of multiple modules
-                that all ultimately mingled and worked together to make the game work! It opened my mind up to this way of programming.
-                I quickly realized the benefits of stepwise refinement and maintaining organized files.
-            </p>
-            <br>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_ghast_1.png"
+              alt="Floating ghast"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_ghast_2.png"
+              alt="Floating ghast"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_snow_1.png"
+              alt="Snowy terrain"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_snow_2.png"
+              alt="Snowy terrain"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_terrain_gen_1.png"
+              alt="Terrain generation"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_terrain_gen_2.png"
+              alt="Terrain generation"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_terrain_gen_3.png"
+              alt="Terrain generation"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_terrain_gen_4.png"
+              alt="Terrain generation"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_tower.png"
+              alt="Tall tower"
+            />
+          </div>
         </div>
-        <footer class="text-center">
-            Reach me:
-            <br class="user-select-none">
-            <br class="user-select-none">
-            <div class="refs d-flex d-inline-block justify-content-evenly">
-                <div class="ref-link">
-                    <a class="interactable" href="https://github.com/shashwatb14" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="ref-link">
-                    <a class="interactable" href="https://www.linkedin.com/in/shashwatbhandari/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="ref-link">
-                    <a class="interactable" href="https://www.youtube.com/channel/UCZI0K4FMEbEpfgVA4aoTmCA" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="ref-link">
-                    <a class="interactable" href="mailto:shashwat.bhandari.14@gmail.com" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <p>Built by Shashwat Bhandari</p>
-        </footer>
-    </body>
+        <div class="swiper-button-next nav-btn interactable"></div>
+        <div class="swiper-button-prev nav-btn interactable"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <p>
+        I undertook this project because I just wanted to build something fun.
+        (or perhaps something that would interest my friends and make me look
+        cool 😎) So, I started following incredible
+        <a
+          data-value="tutorials"
+          class="interactable"
+          href="https://www.youtube.com/watch?v=vX4l-qozib8&list=PLmP1LNMzp97pQe1FiGpdOLKeWYfTMZM7n"
+          target="_blank"
+          >tutorials</a
+        >
+        by the
+        <a
+          data-value="RedHenDev"
+          class="interactable"
+          href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg"
+          target="_blank"
+          >RedHenDev</a
+        >. However, I was just coding along with him, and not understanding the
+        tiny specific details of every line of code. I did get the gist of the
+        ideas that he implemented, however, I was slightly disheartened as I
+        wasn't able to completely understand everything. Nevertheless, it was
+        quite fun and satisfying to see the program work. Some particular
+        features of this Minecraft ripoff included:
+      </p>
+
+      <ul>
+        <li>
+          Perlin noise for terrain generation using the
+          <a
+            data-value="perlin-noise"
+            class="interactable"
+            href="https://pypi.org/project/perlin-noise/"
+            target="_blank"
+            >perlin-noise</a
+          >
+          library
+        </li>
+        <li>Improved gravity system to make the game efficient</li>
+        <li>
+          Effective terrain generation with a unique swirling technique
+          (infinite)
+        </li>
+        <li>
+          The capability of building with different materials and mining only
+          built materials
+        </li>
+        <li>Self-made mods</li>
+      </ul>
+      <p>
+        Some images of the final product are shown below:
+        <br />
+        <!-- Swiper -->
+      </p>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_v1_1.png"
+              alt="Floating ghast"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_v1_2.png"
+              alt="Floating ghast"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_v1_3.png"
+              alt="Build tool"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn interactable"></div>
+        <div class="swiper-button-prev nav-btn interactable"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <p>
+        The following images show the unfinished product but with more features
+        - the textures change as the altitude changes:
+        <br />
+        <!-- Swiper -->
+      </p>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_v1_4.png"
+              alt="Terrain change"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_v1_5.png"
+              alt="Floating enderman"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_v1_6.png"
+              alt="Build tool"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn interactable"></div>
+        <div class="swiper-button-prev nav-btn interactable"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <p>
+        However, I recently decided to start again and work on a second version,
+        again following the
+        <a
+          data-value="RedHenDev"
+          class="interactable"
+          href="https://www.youtube.com/channel/UCmth-THBKWxLMw3aPsp-jQg"
+          target="_blank"
+          >RedHenDev</a
+        >
+        with his new
+        <a
+          data-value="tutorials series"
+          class="interactable"
+          href="https://www.youtube.com/watch?v=fofR4yzTCdA&list=PLmP1LNMzp97rIbwnGHhjjobHHqWekxy8Y"
+          target="_blank"
+          >tutorials series</a
+        >. With the previous version abandoned, I decided on focusing on adding
+        features that I wasn't able to in the previous version. So far, many of
+        them are similar, but a few unique ones include:
+      </p>
+
+      <ul>
+        <li>Mining into the terrain (infinitely)</li>
+        <li>
+          Similar terrain generation techniques however with some minor
+          improvements to enhance gameplay
+        </li>
+        <li>
+          Step sounds that change as the terrain changes (from normal terrain to
+          snow in higher terrains)
+        </li>
+        <li>Falling snowflakes that follow the player around</li>
+      </ul>
+      <p>
+        <!-- Swiper -->
+      </p>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_v2_1.png"
+              alt="Mining"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_v2_2.png"
+              alt="Snowflakes"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../images/block_world/block_world_v2_3.png"
+              alt="Inside hole"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn interactable"></div>
+        <div class="swiper-button-prev nav-btn interactable"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <p>
+        An important feature of the second version and my key takeaway was the
+        use of multiple modules that all ultimately mingled and worked together
+        to make the game work! It opened my mind up to this way of programming.
+        I quickly realized the benefits of stepwise refinement and maintaining
+        organized files.
+      </p>
+      <br />
+    </div>
+    <footer class="text-center">
+      Reach me:
+      <br class="user-select-none" />
+      <br class="user-select-none" />
+      <div class="refs d-flex d-inline-block justify-content-evenly">
+        <div class="ref-link">
+          <a
+            class="interactable"
+            href="https://github.com/shashwatb14"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="ref-link">
+          <a
+            class="interactable"
+            href="https://www.linkedin.com/in/shashwatbhandari/"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-linkedin"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="ref-link">
+          <a
+            class="interactable"
+            href="https://www.youtube.com/channel/UCZI0K4FMEbEpfgVA4aoTmCA"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-youtube"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="ref-link">
+          <a
+            class="interactable"
+            href="mailto:shashwat.bhandari.14@gmail.com"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-envelope"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p>Built by Shashwat Bhandari</p>
+    </footer>
+  </body>
 </html>
