@@ -864,8 +864,10 @@ body:hover > #trailer {
 }
 
 #main-text {
-  width: 80%;
+  width: 50%;
   top: 50% !important;
+  display: flex;
+  flex-direction: column;
 }
 
 #main-text .typing-container,
@@ -873,9 +875,16 @@ body:hover > #trailer {
   display: block !important;
 }
 
+#main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - (60px + 176px + 40px) - 20px);
+}
+
 #main-image img {
   margin-top: 4px;
-  height: calc(100vh - (60px + 176px + 40px) - 20px);
+  height: 80%;
   object-fit: cover;
   border-radius: var(--border-radius);
   box-shadow: 0 0 16px 2px var(--color-secondary),
